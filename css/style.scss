@@ -13,6 +13,7 @@ header {
 }
 
 .head-container {
+  margin-top: 7px!important;
   width: 1100px;
   margin: 0 auto;
   @media screen and (max-width: 1100px) {
@@ -51,6 +52,10 @@ header {
   padding-top: 1px;
 }
 
+.my-bar-nav {
+  margin-bottom: 10px;
+}
+
 .brand-name-com {
   color: #f7d51a;
   font-family: "Open Sans";
@@ -62,7 +67,8 @@ header {
 }
 
 .my-nav-link {
-  margin: 7.5px -15px;
+
+  margin-right: 0!important;
 
   a {
     color: #393939;
@@ -590,6 +596,8 @@ header {
 }
 
 .my-top-bar {
+  margin-top: -10px;
+
   a {
     display: flex;
     flex-direction: row;
@@ -601,6 +609,10 @@ header {
     &:focus {
       text-decoration: none!important;
     }
+  }
+
+  h1 {
+    margin-bottom: 0;
   }
 }
 
@@ -686,6 +698,16 @@ header {
   margin: 0px 5px;
   display: flex;
   align-items: center;
+}
+
+.all-info-txt-btc {
+  padding-bottom: 20px;
+  .min-sum-info {
+    font-size: 12px;
+    color: #393939;
+    font-weight: 400;
+    line-height: 16px;
+  }
 }
 
 .bd-social-footer-two {

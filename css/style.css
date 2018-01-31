@@ -7,6 +7,7 @@ header {
     font-size: 32px; }
 
 .head-container {
+  margin-top: 7px !important;
   width: 1100px;
   margin: 0 auto; }
   @media screen and (max-width: 1100px) {
@@ -41,6 +42,9 @@ header {
   padding-left: 1px;
   padding-top: 1px; }
 
+.my-bar-nav {
+  margin-bottom: 10px; }
+
 .brand-name-com {
   color: #f7d51a;
   font-family: "Open Sans";
@@ -51,7 +55,7 @@ header {
   letter-spacing: -3.4px; }
 
 .my-nav-link {
-  margin: 7.5px -15px; }
+  margin-right: 0 !important; }
   .my-nav-link a {
     color: #393939;
     font-size: 16px;
@@ -464,13 +468,17 @@ header {
       padding: 30px 0;
       justify-content: center; } }
 
-.my-top-bar a {
-  display: flex;
-  flex-direction: row; }
-  .my-top-bar a:hover {
-    text-decoration: none; }
-  .my-top-bar a:focus {
-    text-decoration: none !important; }
+.my-top-bar {
+  margin-top: -10px; }
+  .my-top-bar a {
+    display: flex;
+    flex-direction: row; }
+    .my-top-bar a:hover {
+      text-decoration: none; }
+    .my-top-bar a:focus {
+      text-decoration: none !important; }
+  .my-top-bar h1 {
+    margin-bottom: 0; }
 
 .issues-side-right h4 {
   color: #3bcd78;
@@ -534,6 +542,14 @@ header {
   margin: 0px 5px;
   display: flex;
   align-items: center; }
+
+.all-info-txt-btc {
+  padding-bottom: 20px; }
+  .all-info-txt-btc .min-sum-info {
+    font-size: 12px;
+    color: #393939;
+    font-weight: 400;
+    line-height: 16px; }
 
 .bd-social-footer-two {
   border: 2px solid #f7d51a;
