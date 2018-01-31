@@ -6,120 +6,114 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap/select/dist/css/bootstrap-select.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <title>eCrypta</title>
 </head>
+
 <body>
   <header>
     <nav class="navbar navbar-default my-bar-nav">
-        <div class="head-container">
-          <div class="container-logo">
-            <div class="navbar-header my-top-bar">
-              <a href="#">
-                <h1 class="brand-name-first" href="#">E</h1>
-                <h1 class="brand-name-second" href="#">-</h1>
-                <h1 class="brand-name-last" href="#">crypta</h1>
-                <h1 class="brand-name-com" href="#">com</h1>
-              </a>
-            </div>
-            <div class="litle-txt-logo">
-              <p>Обмен криптовалюты   Запорожье, Днепр</p>
-            </div>
+      <div class="head-container">
+        <div class="container-logo">
+          <div class="navbar-header my-top-bar">
+            <a href="#">
+              <h1 class="brand-name-first" href="#">E</h1>
+              <h1 class="brand-name-second" href="#">-</h1>
+              <h1 class="brand-name-last" href="#">crypta</h1>
+              <h1 class="brand-name-com" href="#">com</h1>
+            </a>
           </div>
-            <div class="collapse navbar-collapse collapse-container-top" id="bs-example-navbar-collapse-1">
+          <div class="litle-txt-logo">
+            <p>Обмен криптовалюты Запорожье, Днепр</p>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse collapse-container-top" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav my-nav-link">
             <li><a href="#">Тарифы</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
         </div>
-          <ul class="nav navbar-nav navbar-right my-nav-link">
-            <button type="button" class="btn btn-default dropdown-toggle button-operator-top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <ul class="nav navbar-nav navbar-right my-nav-link">
+          <button type="button" class="btn btn-default dropdown-toggle button-operator-top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <span>Служба поддержки</span>
               <img src="img/customer-support.svg" alt="">
             </button>
-          </ul>
+        </ul>
       </div>
     </nav>
   </header>
   <div class="all-bg">
-  <content>
-    <div class="container-content">
-      <div class="left-side">
-        <div class="container-side-left">
-          <h2>Обмен <span class="nol-txt">Наличные</span> на <span class="bit-txt">Bitcoin</span><span class="city-txt"> <br>Запорожье, Днепр</span></h2>
-          <div class="cost-label">Отдаете</div>
-          <div class="all-cost-number all-btn-inp">
-            <input type="number" class="form-control my-number-cost" placeholder="0.0000000" aria-describedby="basic-addon1">
-            <div class="all-cost">
-              <a href="#"><span class="grn-cost">₴</span></a>
-              <a href="#"><span class="euro-cost">€</span></a>
-              <a href="#"><span class="usd-cost">$</span></a>
-            </div>
-          </div>
-          <div class="cost-label">Скорость зачисления на ваш кошелек</div>
-          <div class="all-speed-enlistment">
-            <div class="input-group">
-              <input type="text" class="form-control" aria-label="...">
-              <div class="input-group-btn">
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
-                <ul class="dropdown-menu dropdown-menu-right">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                </ul>
+    <content>
+      <div class="container-content">
+        <div class="left-side">
+          <div class="container-side-left">
+            <h2>Обмен <span class="nol-txt">Наличные</span> на <span class="bit-txt">Bitcoin</span><span class="city-txt"> <br>Запорожье, Днепр</span></h2>
+            <div class="cost-label">Отдаете</div>
+            <div class="all-cost-number all-btn-inp">
+              <input type="number" class="form-control my-number-cost" placeholder="0.0000000" aria-describedby="basic-addon1">
+              <div class="all-cost">
+                <a href="#"><span class="grn-cost">₴</span></a>
+                <a href="#"><span class="euro-cost">€</span></a>
+                <a href="#"><span class="usd-cost">$</span></a>
               </div>
             </div>
-            <div class="img-arrow">
-              <img src="img/transfer-black.png" alt="">
-            </div>
-          </div>
-          <div class="cost-label">Получаете</div>
-          <div class="all-cost-number bt-cost-bumber">
-            <input type="number" class="form-control my-number-cost" placeholder="0.0000000" aria-describedby="basic-addon1">
-            <a href="#"><span class="btc-cost">฿</span></a>
-          </div>
-        </div>
-        <div class="container-side-left">
-          <div class="all-info-txt-btc">
-            <div class="min-max-info-btc">
-              <div class="min-sum-info">0.001 <span class="gr-txt-info-btc">BTCBTC</span></div>
-              <div class="min-sum-info">0.001 <span class="gr-txt-info-btc">BTCc</span></div>
+            <div class="cost-label">Скорость зачисления на ваш кошелек</div>
+            <div class="all-select-btp">
+              <select class="selectpicker my-btp-select">
+              <option>Mustard</option>
+              <option>Ketchup</option>
+              <option>Relish</option>
+            </select>
+              <a href="">
+                <div class="transfer-btn-all"></div>
+              </a>
             </div>
 
-            <div class="course-info-btc">
-              <div class="min-sum-info">0.001 <span class="gr-txt-info-btc">BTCas</span></div>
-              <div class="min-sum-info">0.001 <span class="gr-txt-info-btc">BTCeqeqe</span></div>
+            <div class="cost-label">Получаете</div>
+            <div class="all-cost-number bt-cost-bumber">
+              <input type="number" class="form-control my-number-cost" placeholder="0.0000000" aria-describedby="basic-addon1">
+              <a href="#"><span class="btc-cost">฿</span></a>
             </div>
           </div>
-          <p class="txt-info-btc">На момент сделки курс и комиссия будет пересчитана!</p>
-          <p class="requisites-txt-left">Ваши реквизиты</p>
-          <input type="text" class="form-control my-number-cost bt-inputs-left" placeholder="Имя" aria-describedby="basic-addon1">
-          <input type="tel" class="form-control my-number-cost bt-inputs-left" placeholder="Телефон" aria-describedby="basic-addon1">
-          <input type="text" class="form-control my-number-cost bt-inputs-left" placeholder="Адрес Bitcoin" aria-describedby="basic-addon1">
-          <div class="all-speed-enlistment">
-            <div class="input-group">
-              <input type="text" class="form-control" aria-label="...">
-              <div class="input-group-btn">
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
-                <ul class="dropdown-menu dropdown-menu-right">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                </ul>
+          <div class="container-side-left">
+            <div class="all-info-txt-btc">
+              <div class="min-max-info-btc">
+                <div class="min-sum-info">0.001 <span class="gr-txt-info-btc">BTCBTC</span></div>
+                <div class="min-sum-info">0.001 <span class="gr-txt-info-btc">BTCc</span></div>
+              </div>
+              <div class="course-info-btc">
+                <div class="min-sum-info">0.001 <span class="gr-txt-info-btc">BTCas</span></div>
+                <div class="min-sum-info">0.001 <span class="gr-txt-info-btc">BTCeqeqe</span></div>
+              </div>
+            </div>
+            <p class="txt-info-btc">На момент сделки курс и комиссия будет пересчитана!</p>
+            <p class="requisites-txt-left">Ваши реквизиты</p>
+            <input type="text" class="form-control my-number-cost bt-inputs-left" placeholder="Имя" aria-describedby="basic-addon1">
+            <input type="tel" class="form-control my-number-cost bt-inputs-left" placeholder="Телефон" aria-describedby="basic-addon1">
+            <input type="text" class="form-control my-number-cost bt-inputs-left" placeholder="Адрес Bitcoin" aria-describedby="basic-addon1">
+            <select class="selectpicker my-city-select">
+            <option>Mustard</option>
+            <option>Ketchup</option>
+            <option>Relish</option>
+          </select>
+            <div class="txt-next-operator">
+              <p>Нажимая кнопку "ДАЛЕЕ" вы подтверждаете свое согласие с <a href="#">Правилами предоставления услуг</a> сервиса «Обменник» и <b>передаете заявку оператору</b></p>
+              <div class="">
+                <img src="img/robot.jpg" alt="">
               </div>
             </div>
           </div>
-          <div class="bt-pad-left"></div>
+          <button type="button" class="btn btn-default btn-next-left-side">Далее >></button>
         </div>
-        <button type="button" class="btn btn-default btn-next-left-side">Далее >></button>
-      </div>
-      <div class="right-side">
-        <div class="all-txt-right-info">
-          <div class="top-txt-info-side">
-            <p>Покупка / продажа BTC</p>
-            <p>Резерв</p>
-          </div>
-          <div class="all-currency-side">
+        <div class="side-band"></div>
+        <div class="right-side">
+          <div class="all-txt-right-info">
+            <!-- <div class="top-txt-info-side">
+              <p>Покупка / продажа BTC</p>
+              <p>Резерв</p>
+            </div> -->
+            <!-- <div class="all-currency-side">
             <div class="left-info-currency">
               <p><span class="currency-type-txt">USD</span>  11549,237 / 10549,237</p>
               <p><span class="currency-type-txt">eur</span>  10549,237 / 9032,037</p>
@@ -130,41 +124,97 @@
               <p><span class="currency-type-txt">eur</span>  1054</p>
               <p><span class="currency-type-txt">UAH</span>  31699</p>
             </div>
+          </div> -->
+
+            <table class="table my-price-table">
+              <thead>
+                <tr>
+                  <th>Покупка</th>
+                  <th>продажа BTC</th>
+                  <th>Резерв</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tb-first-child">
+                    <span>
+                  USD
+                </span> John
+                  </td>
+                  <td>Doe</td>
+                  <td class="tb-last-child">
+                    <span>
+                    USD
+                  </span> 123
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tb-first-child">
+                    <span>
+                  USD
+                </span> Mary
+                  </td>
+                  <td>Moe</td>
+                  <td class="tb-last-child">
+                    <span>
+                    USD
+                  </span> 333
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tb-last-child first-td-bt-table">
+                    <span>
+                  USD
+                </span> July
+                  </td>
+                  <td class="tb-last-child">Dooley</td>
+                  <td class="tb-last-child">
+                    <span>
+                    USD
+                  </span> 91
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
           </div>
-        </div>
-        <p class="terms-use-txt">Правила пользования обменником:</p>
-        <div class="all-exchanger-txt">
-          <div class="one-txt-exchanger">
-            <span><img src="img/arrow-green-txt.png" alt=""></span>
-            <div class="txt-info-terms-use"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+          <p class="terms-use-txt">Правила пользования обменником:</p>
+          <div class="all-exchanger-txt">
+            <div class="one-txt-exchanger">
+              <span><img src="img/arrow-green-txt.png" alt=""></span>
+              <div class="txt-info-terms-use">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+            </div>
+            <div class="two-txt-exchanger">
+              <span><img src="img/arrow-green-txt.png" alt=""></span>
+              <div class="txt-info-terms-use">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+            </div>
+            <div class="three-txt-exchanger">
+              <span><img src="img/arrow-green-txt.png" alt=""></span>
+              <div class="txt-info-terms-use">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+            </div>
+            <div class="four-txt-exchanger">
+              <span><img src="img/arrow-green-txt.png" alt=""></span>
+              <div class="txt-info-terms-use">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+            </div>
           </div>
-          <div class="two-txt-exchanger">
-            <span><img src="img/arrow-green-txt.png" alt=""></span>
-            <div class="txt-info-terms-use"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
-          </div>
-          <div class="three-txt-exchanger">
-            <span><img src="img/arrow-green-txt.png" alt=""></span>
-            <div class="txt-info-terms-use"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
-          </div>
-          <div class="four-txt-exchanger">
-            <span><img src="img/arrow-green-txt.png" alt=""></span>
-            <div class="txt-info-terms-use"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
-          </div>
-        </div>
-        <div class="issues-side-right">
-          <h4>Остались вопросы?</h4>
-          <p>Наша служба поддержки на связи с 9:00 до 20:00</p>
-          <div class="btn-support-start">
-            <button type="button" class="btn btn-default dropdown-toggle button-operator-top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <div class="issues-side-right">
+            <h4>Остались вопросы?</h4>
+            <p>Наша служба поддержки на связи с 9:00 до 20:00</p>
+            <div class="btn-support-start">
+              <button type="button" class="btn btn-default dropdown-toggle button-operator-bt" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <span>Служба поддержки</span>
               <i class="far fa-comment"></i>
           </button>
+            </div>
+            <p>Ответы на общие вопросы можете найти в <a href="#">FAQ</a></p>
           </div>
-          <p>Ответы на общие вопросы можете найти в  <span>FAQ</span></p>
         </div>
       </div>
-    </div>
-  </content>
+    </content>
   </div>
   <footer>
     <div class="footer-container">
@@ -201,7 +251,9 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="fontawesome/svg-with-js/js/fontawesome-all.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

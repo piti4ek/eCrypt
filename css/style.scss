@@ -94,6 +94,39 @@ header {
   border-radius: 31px;
   border: 3px solid #f7d51a;
 
+  &:hover {
+    background: #f7d51a!important;
+    border: 3px solid #f7d51a!important;
+  }
+
+  span {
+    color: #393939;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  i, svg, img {
+    color: #393939;
+    font-size: 24px!important;
+    margin-left: 5%;
+  }
+}
+
+.button-operator-bt {
+  color: #333;
+  background-color: #fff;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  border-radius: 31px;
+  border: 3px solid #f7d51a;
+
+  &:hover {
+    background: #f7d51a!important;
+    border: 3px solid #f7d51a!important;
+  }
+
   span {
     color: #393939;
     font-size: 16px;
@@ -111,6 +144,55 @@ header {
   display: flex!important;
   justify-content: space-between;
   align-items: center;
+
+  a {
+    color: #393939!important;
+  }
+}
+
+.my-price-table {
+  margin-bottom: 0;
+  thead {
+    tr {
+      th {
+        border: none;
+        text-align: center;
+        color: #393939;
+        font-family: "Open Sans";
+        font-size: 21px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        border-color: #f7d51a!important;
+        color: #393939;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: "Open Sans";
+        text-transform: uppercase;
+
+        span {
+          color: #f7d51a;
+        }
+      }
+    }
+
+    .tb-first-child {
+      border-right: 1px solid #f7d51a;
+    }
+  }
+
+  .tb-last-child {
+    border-left: 1px solid #f7d51a;
+  }
+}
+
+.first-td-bt-table {
+  border-left: none!important;
 }
 
 .btn-support-start {
@@ -161,7 +243,6 @@ header {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  padding-top: 30px;
 
   @media screen and (max-width: 1152px) {
     width: 100%;
@@ -180,6 +261,7 @@ header {
 .left-side {
   width: 50%;
   position: relative;
+  padding-top: 25px;
 
   @media screen and (max-width: 1152px) {
     width: 100%;
@@ -193,6 +275,7 @@ header {
 .right-side {
   width: 50%;
   text-align: center;
+  padding-top: 25px;
 
   @media screen and (max-width: 1152px) {
     width: 100%;
@@ -251,12 +334,45 @@ header {
   }
 }
 
-.bt-pad-left {
-  padding-bottom: 250px;
+.side-band {
+  background-color: #f6f6f6;
+  height: auto;
+  width: 4px;
+}
 
-  @media screen and (max-width: 1152px) {
-    padding-bottom: 200px;
+.txt-next-operator {
+  padding-bottom: 30px;
+  p {
+    padding: 20px 0;
+    color: #d3d3d3;
+    font-family: "Open Sans";
+    font-size: 11px;
+    font-weight: 400;
+
+    a {
+      color: #d3d3d3;
+      text-decoration: underline;
+
+      &:hover {
+        color: #f7d51a;
+        font-family: "Open Sans";
+        font-size: 11px;
+        font-weight: 400;
+        text-decoration: underline;
+      }
+    }
   }
+}
+
+.my-dropdown-menu-right {
+  width: 250px;
+}
+
+.my-wide-dropdown-menu-right {
+  width: 405px;
+  border-radius: 0;
+  border: 2px solid #393939;
+  margin-right: -5px;
 }
 
 .all-speed-enlistment {
@@ -264,16 +380,25 @@ header {
   flex-direction: row;
   justify-content: space-between;
 
+  .input-group {
+    position: relative;
+  }
+
+  .input-group-btn {
+    position: initial;
+  }
+
   @media screen and (max-width: 415px) {
     flex-direction: column-reverse;
   }
 
   .input-group {
     border-radius: 0;
-    width: 350px;
+    width: 250px;
     height: 52px;
     border: 2px solid #ebebeb;
     opacity: 0.8;
+    z-index: 9999;
 
     @media screen and (max-width: 415px) {
       width: 100%;
@@ -298,6 +423,65 @@ header {
   }
 }
 
+.speed-transfer {
+  justify-content: flex-start!important;
+}
+
+.speed-enlistment-bt {
+  // border: 2px solid #393939;
+
+  .input-group {
+    width: 400px;
+  }
+}
+
+.active-one-select-side {
+  border: 2px solid #393939;
+}
+
+.active-two-select-side {
+  border: 2px solid #ebebeb;
+  opacity: 0.8;
+}
+
+.my-btp-select {
+  button {
+    width: 250px!important;
+    border-radius: 0;
+    height: 52px;
+    border: 2px solid #ececec;
+
+    &:active {
+      border: 2px solid #393939;
+    }
+
+    &:focus {
+      border: 2px solid #393939;
+    }
+  }
+  .dropdown-menu {
+    width: 250px!important;
+    border-radius: 0;
+  }
+}
+
+.my-city-select {
+  button {
+    width: 400px!important;
+    border-radius: 0;
+    height: 52px;
+    border: 2px solid #ececec;
+  }
+  .dropdown-menu {
+    width: 400px!important;
+    border-radius: 0;
+  }
+}
+
+.my-dropdown-toggle {
+  min-width: 50px;
+}
+
 .requisites-txt-left {
   color: #393939;
   font-family: "Open Sans";
@@ -310,7 +494,7 @@ header {
   font-family: "Open Sans";
   font-size: 12px;
   font-weight: 700;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 
 .min-coin-info, .reserve-coin-info {
@@ -370,6 +554,7 @@ header {
     min-width: 40px;
     text-align: center;
     margin: 0 5px;
+    margin-left: 15px;
 
     &:hover {
       border: 2px solid #d1d8d8;
@@ -379,10 +564,15 @@ header {
 
 .my-number-cost {
   border-radius: 0;
-  width: 350px;
+  width: 250px;
   height: 52px;
   border: 2px solid #ebebeb;
   opacity: 0.8;
+
+  &:focus {
+    box-shadow: 0 0 16px 3px rgba(247, 213, 26, 0.31);
+    border: 2px solid #393939;
+  }
 
   @media screen and (max-width: 415px) {
     margin-top: 15px;
@@ -393,6 +583,7 @@ header {
 
 .bt-inputs-left {
   margin-bottom: 5%;
+  width: 400px;
 }
 
 .next-btn-txt {
@@ -410,17 +601,23 @@ header {
 
 .btn-next-left-side {
   height: 65px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.17);
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.17);
   background-color: #3bcd78;
   width: 100%;
   border-radius: 0;
-  position: absolute;
-  bottom: 2%;
   color: #ffffff;
   font-family: "Open Sans";
   font-size: 27px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 20px;
+
+  &:hover {
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.17);
+    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #3bcd78;
+    color: #fff;
+  }
 
   @media screen and (max-width: 415px) {
     width: 90%;
@@ -444,7 +641,6 @@ header {
   border: 1px solid #f7d51a;
   max-width: 440px;
   margin: 0 auto;
-  padding: 5% 0;
   margin-top: 5%;
   margin-bottom: 10%;
 }
@@ -473,10 +669,18 @@ header {
   max-width: 560px;
   margin: 0 auto;
 
+  @media screen and (max-width: 450px) {
+    padding: 3% 2%;
+  }
+
   p {
     font-size: 14px;
     font-weight: 700;
     margin: 0;
+  }
+
+  span {
+    padding-right: 5%;
   }
 }
 
@@ -498,18 +702,50 @@ header {
   color: #f7d51a;
 }
 
-.img-arrow {
-  display: flex;
-  align-items: center;
-
   @media screen and (max-width: 415px) {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px 0;
   }
-}
 
+  .all-select-btp {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .transfer-btn-all {
+    background: url(../img/transfer-black.png) no-repeat;
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+    margin-top: 3px;
+
+    &:hover {
+      background: url(../img/transfer-last.png) no-repeat;
+    }
+  }
+
+  .transfer-btn-first {
+    position: absolute;
+    z-index: 10;
+    top: 5%;
+    width: 50px;
+    height: 50px;
+    background: url(../img/transfer-black.png) no-repeat;
+
+    &:hover {
+      background: url(../img/transfer-last.png) no-repeat;
+    }
+  }
+
+  .transfer-btn-last {
+    position: absolute;
+    top: 5%;
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+  }
 .all-footer-social {
   @media screen and (max-width: 767px) {
     margin-bottom: 20px;
@@ -551,6 +787,8 @@ header {
 
 .bt-cost-bumber {
   padding-bottom: 15px;
+  display: flex;
+  justify-content: flex-start!important;
 }
 
 .all-txt-info-btc {
@@ -636,10 +874,14 @@ header {
     font-weight: 400;
     padding: 25px 0;
 
-    span {
+    a {
       color: #f7d51a;
       font-size: 18px;
       font-weight: 700;
+
+      &:hover {
+        color: #393939;
+      }
     }
   }
 }
@@ -670,6 +912,13 @@ header {
     color: #393939;
     font-size: 12px;
     font-weight: 800;
+
+    &:hover {
+      color: #f7d51a;
+      font-size: 12px;
+      font-weight: 800;
+      text-decoration: none;
+    }
   }
 }
 
@@ -688,6 +937,10 @@ header {
     color: #393939;
     font-size: 18px;
     font-weight: 400;
+
+    &:hover {
+      background: #f7d51a;
+    }
   }
 }
 
