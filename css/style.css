@@ -83,7 +83,9 @@ header {
     color: #393939;
     font-size: 16px;
     font-weight: 700; }
-  .button-operator-top i, .button-operator-top svg, .button-operator-top img {
+  .button-operator-top i,
+  .button-operator-top img,
+  .button-operator-top svg {
     color: #393939;
     font-size: 24px !important;
     margin-left: 5%; }
@@ -104,7 +106,9 @@ header {
     color: #393939;
     font-size: 16px;
     font-weight: 700; }
-  .button-operator-bt i, .button-operator-bt svg, .button-operator-bt img {
+  .button-operator-bt i,
+  .button-operator-bt img,
+  .button-operator-bt svg {
     color: #393939;
     font-size: 24px !important;
     margin-left: 5%; }
@@ -242,7 +246,7 @@ header {
     text-decoration: none; }
 
 .btc-cost {
-  padding: 1px 12px 4px 12px;
+  padding: 1px 12px 4px;
   margin-right: 0 !important; }
   .btc-cost a {
     color: #565757;
@@ -364,7 +368,8 @@ header {
   font-weight: 700;
   padding-bottom: 25px; }
 
-.min-coin-info, .reserve-coin-info {
+.min-coin-info,
+.reserve-coin-info {
   color: #393939;
   font-family: "Open Sans";
   font-size: 12px;
@@ -384,10 +389,10 @@ header {
   font-weight: 400; }
 
 .euro-cost {
-  padding: 2px 12px !important; }
+  padding: 2px 12px !important !important; }
 
 .usd-cost {
-  padding: 2px 13px !important; }
+  padding: 2px 13px !important !important; }
 
 .all-cost-number {
   display: flex;
@@ -408,8 +413,7 @@ header {
     border-radius: 30px;
     min-width: 40px;
     text-align: center;
-    margin: 0 5px;
-    margin-left: 15px; }
+    margin: 0 5px 0 15px; }
     .all-cost-number span:hover {
       border: 2px solid #d1d8d8; }
 
@@ -477,9 +481,7 @@ header {
 .all-txt-right-info {
   border: 1px solid #f7d51a;
   max-width: 440px;
-  margin: 0 auto;
-  margin-top: 5%;
-  margin-bottom: 10%; }
+  margin: 5% auto 10%; }
 
 .left-info-currency {
   text-align: left; }
@@ -493,7 +495,14 @@ header {
   margin: 0 auto;
   text-align: left; }
 
-.one-txt-exchanger, .two-txt-exchanger, .three-txt-exchanger, .four-txt-exchanger {
+.all-cost-number span.active,
+.all-cost-number span:hover {
+  border: 2px solid #d1d8d8; }
+
+.four-txt-exchanger,
+.one-txt-exchanger,
+.three-txt-exchanger,
+.two-txt-exchanger {
   display: flex;
   flex-direction: row;
   padding: 1% 5%;
@@ -501,13 +510,22 @@ header {
   max-width: 560px;
   margin: 0 auto; }
   @media screen and (max-width: 450px) {
-    .one-txt-exchanger, .two-txt-exchanger, .three-txt-exchanger, .four-txt-exchanger {
+    .four-txt-exchanger,
+    .one-txt-exchanger,
+    .three-txt-exchanger,
+    .two-txt-exchanger {
       padding: 3% 2%; } }
-  .one-txt-exchanger p, .two-txt-exchanger p, .three-txt-exchanger p, .four-txt-exchanger p {
+  .four-txt-exchanger p,
+  .one-txt-exchanger p,
+  .three-txt-exchanger p,
+  .two-txt-exchanger p {
     font-size: 14px;
     font-weight: 700;
     margin: 0; }
-  .one-txt-exchanger span, .two-txt-exchanger span, .three-txt-exchanger span, .four-txt-exchanger span {
+  .four-txt-exchanger span,
+  .one-txt-exchanger span,
+  .three-txt-exchanger span,
+  .two-txt-exchanger span {
     padding-right: 5%; }
 
 .right-info-currency {
@@ -534,13 +552,13 @@ header {
   justify-content: flex-start; }
 
 .transfer-btn-all {
-  background: url(../img/transfer-black.png) no-repeat;
+  background: url("../img/transfer-black.png") no-repeat;
   width: 50px;
   height: 50px;
   margin-left: 40px;
   margin-top: 3px; }
   .transfer-btn-all:hover {
-    background: url(../img/transfer-last.png) no-repeat; }
+    background: url("../img/transfer-last.png") no-repeat; }
 
 .transfer-btn-first {
   position: absolute;
@@ -548,9 +566,9 @@ header {
   top: 5%;
   width: 50px;
   height: 50px;
-  background: url(../img/transfer-black.png) no-repeat; }
+  background: url("../img/transfer-black.png") no-repeat; }
   .transfer-btn-first:hover {
-    background: url(../img/transfer-last.png) no-repeat; }
+    background: url("../img/transfer-last.png") no-repeat; }
 
 .transfer-btn-last {
   position: absolute;
@@ -587,7 +605,10 @@ header {
 .second-left-txt {
   margin: 2% 0; }
 
-.one-btn-txt-info, .two-btn-txt-info, .three-btn-txt-info, .four-btn-txt-info {
+.four-btn-txt-info,
+.one-btn-txt-info,
+.three-btn-txt-info,
+.two-btn-txt-info {
   padding-right: 10%; }
 
 .bt-cost-bumber {
@@ -676,15 +697,18 @@ header {
     .mail-footer {
       text-align: center; } }
 
-.footer-rates, .footer-regulations {
+.footer-rates,
+.footer-regulations {
   color: #393939;
   font-size: 12px;
   font-weight: 800; }
-  .footer-rates a, .footer-regulations a {
+  .footer-rates a,
+  .footer-regulations a {
     color: #393939;
     font-size: 12px;
     font-weight: 800; }
-    .footer-rates a:hover, .footer-regulations a:hover {
+    .footer-rates a:hover,
+    .footer-regulations a:hover {
       color: #f7d51a;
       font-size: 12px;
       font-weight: 800;
@@ -709,8 +733,8 @@ header {
 .bd-social-footer-one {
   border: 2px solid #f7d51a;
   border-radius: 30px;
-  padding: 10px 10px;
-  margin: 0px 5px;
+  padding: 10px;
+  margin: 0 5px;
   display: flex;
   align-items: center; }
 
@@ -727,15 +751,15 @@ header {
   border-radius: 30px;
   padding: 10px 14px;
   min-width: 30px;
-  margin: 0px 5px;
+  margin: 0 5px;
   display: flex;
   align-items: center; }
 
 .bd-social-footer-three {
   border: 2px solid #f7d51a;
   border-radius: 30px;
-  padding: 8px 8px;
-  margin: 0px 5px;
+  padding: 8px;
+  margin: 0 5px;
   display: flex;
   align-items: center; }
 
@@ -744,5 +768,159 @@ header {
   flex-direction: row; }
   .all-info-txt-btc .min-max-info-btc {
     width: 40%; }
+
+.main-sell .sell-revers {
+  padding-left: 221px; }
+
+.main-sell .bt-cost-bumber {
+  padding-bottom: 10px; }
+
+.main-sell .sell-lable {
+  margin-top: 0; }
+
+.my-price-table .tbody .tb-first-child {
+  border-right: 1px solid #f7d51a;
+  text-align: left; }
+
+.main-sell .sell-revers {
+  padding-left: 221px; }
+
+.main-sell .sell-input {
+  padding-bottom: 10px; }
+
+.main-sell .sell-lable {
+  margin-top: 0; }
+
+.star-side {
+  overflow: hidden;
+  color: #ebebeb;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400; }
+
+.first-dot {
+  display: flex;
+  justify-content: space-between;
+  position: relative; }
+
+.second-child-dot {
+  position: absolute;
+  z-index: 1; }
+
+.first-child-dot,
+.last-child-dot {
+  background: #fff;
+  z-index: 2; }
+
+.img-status-block {
+  margin-right: 25px; }
+
+.status-block {
+  background-color: #fff9d9;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-left: 5px solid #e2de49;
+  margin-left: 13px;
+  font-family: "Open Sans"; }
+  .status-block .first-txt-status {
+    color: #393939;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: "Open Sans";
+    font-size: 16px; }
+  .status-block .second-txt-status {
+    font-family: "Open Sans";
+    color: #393939;
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: 600; }
+  .status-block .last-txt-status {
+    color: #393939;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px; }
+
+.application-number-txt {
+  font-size: 16px;
+  text-align: center;
+  padding: 20px 0; }
+
+.btn-send-green-status {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.17);
+  background-color: #3bcd78;
+  max-height: 50px;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff; }
+
+.application-number-txt span {
+  color: #393939;
+  font-family: "Open Sans";
+  font-size: 21px;
+  font-weight: 400;
+  font-weight: 700; }
+
+.all-dot {
+  color: #393939;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 400; }
+
+.star-side-bottom {
+  padding: 30px 0; }
+
+.star-side-top {
+  padding-bottom: 30px; }
+
+.link-txt-bt {
+  padding: 30px 0; }
+  .link-txt-bt p {
+    color: #393939;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 700; }
+  .link-txt-bt .link-bt-left {
+    font-size: 14px;
+    font-weight: 400; }
+  .link-txt-bt a {
+    color: #f7d51a;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: underline; }
+
+.applic-txt-right {
+  color: #3bcd78;
+  font-family: "Open Sans";
+  font-size: 21px;
+  font-weight: 700;
+  text-align: left; }
+
+.applic-txt-right-other {
+  color: #393939;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  padding-bottom: 20px; }
+
+.issues-side-right-txt p {
+  font-weight: 600; }
+
+.button-operator-online {
+  width: 75%;
+  display: flex;
+  justify-content: center; }
+  @media screen and (max-width: 1152px) {
+    .button-operator-online {
+      max-width: 400px; } }
+
+.right-side-app {
+  padding-top: 75px; }
+  @media screen and (max-width: 1152px) {
+    .right-side-app {
+      padding-top: 5px; } }
 
 /*# sourceMappingURL=style.css.map */

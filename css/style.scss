@@ -67,7 +67,6 @@ header {
 }
 
 .my-nav-link {
-
   margin-right: 0!important;
 
   a {
@@ -105,7 +104,9 @@ header {
     font-weight: 700;
   }
 
-  i, svg, img {
+  i,
+  img,
+  svg {
     color: #393939;
     font-size: 24px!important;
     margin-left: 5%;
@@ -133,7 +134,9 @@ header {
     font-weight: 700;
   }
 
-  i, svg, img {
+  i,
+  img,
+  svg {
     color: #393939;
     font-size: 24px!important;
     margin-left: 5%;
@@ -152,6 +155,7 @@ header {
 
 .my-price-table {
   margin-bottom: 0;
+
   thead {
     tr {
       th {
@@ -206,11 +210,9 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
   @media screen and (max-width: 1130px) {
     padding: 0 5%;
   }
-
   @media screen and (max-width: 767px) {
     flex-direction: column;
   }
@@ -243,7 +245,6 @@ header {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-
   @media screen and (max-width: 1152px) {
     width: 100%;
     flex-direction: column;
@@ -262,11 +263,9 @@ header {
   width: 50%;
   position: relative;
   padding-top: 25px;
-
   @media screen and (max-width: 1152px) {
     width: 100%;
   }
-
   @media screen and (max-width: 415px) {
     padding: 0 5%;
   }
@@ -276,10 +275,8 @@ header {
   width: 50%;
   text-align: center;
   padding-top: 25px;
-
   @media screen and (max-width: 1152px) {
     width: 100%;
-
   }
 }
 
@@ -315,6 +312,7 @@ header {
 
 .grn-cost {
   padding: 2px 10px;
+
   a {
     color: #565757;
     font-size: 26px;
@@ -324,8 +322,9 @@ header {
 }
 
 .btc-cost {
-  padding: 1px 12px 4px 12px;
+  padding: 1px 12px 4px;
   margin-right: 0!important;
+
   a {
     color: #565757;
     font-size: 26px;
@@ -342,6 +341,7 @@ header {
 
 .txt-next-operator {
   padding-bottom: 30px;
+
   p {
     padding: 20px 0;
     color: #d3d3d3;
@@ -387,7 +387,6 @@ header {
   .input-group-btn {
     position: initial;
   }
-
   @media screen and (max-width: 415px) {
     flex-direction: column-reverse;
   }
@@ -399,10 +398,8 @@ header {
     border: 2px solid #ebebeb;
     opacity: 0.8;
     z-index: 9999;
-
     @media screen and (max-width: 415px) {
       width: 100%;
-
     }
 
     input {
@@ -416,7 +413,6 @@ header {
         border: none;
       }
     }
-
     @media screen and (max-width: 250px) {
       width: 100%;
     }
@@ -429,7 +425,6 @@ header {
 
 .speed-enlistment-bt {
   // border: 2px solid #393939;
-
   .input-group {
     width: 400px;
   }
@@ -459,6 +454,7 @@ header {
       border: 2px solid #393939;
     }
   }
+
   .dropdown-menu {
     width: 250px!important;
     border-radius: 0;
@@ -472,6 +468,7 @@ header {
     height: 52px;
     border: 2px solid #ececec;
   }
+
   .dropdown-menu {
     width: 400px!important;
     border-radius: 0;
@@ -497,7 +494,8 @@ header {
   padding-bottom: 25px;
 }
 
-.min-coin-info, .reserve-coin-info {
+.min-coin-info,
+.reserve-coin-info {
   color: #393939;
   font-family: "Open Sans";
   font-size: 12px;
@@ -510,7 +508,6 @@ header {
   font-size: 15px;
   font-weight: 400;
   margin: 10px 0 5px;
-
 }
 
 .gr-txt-cost-info {
@@ -521,11 +518,11 @@ header {
 }
 
 .euro-cost {
-  padding: 2px 12px!important;
+  padding: 2px 12px!important !important;
 }
 
 .usd-cost {
-  padding: 2px 13px!important;
+  padding: 2px 13px!important !important;
 }
 
 .all-cost-number {
@@ -533,7 +530,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
   @media screen and (max-width: 415px) {
     flex-direction: column-reverse;
   }
@@ -553,8 +549,7 @@ header {
     border-radius: 30px;
     min-width: 40px;
     text-align: center;
-    margin: 0 5px;
-    margin-left: 15px;
+    margin: 0 5px 0 15px;
 
     &:hover {
       border: 2px solid #d1d8d8;
@@ -573,7 +568,6 @@ header {
     box-shadow: 0 0 16px 3px rgba(247, 213, 26, 0.31);
     border: 2px solid #393939;
   }
-
   @media screen and (max-width: 415px) {
     margin-top: 15px;
     width: 100%;
@@ -618,7 +612,6 @@ header {
     background-color: #3bcd78;
     color: #fff;
   }
-
   @media screen and (max-width: 415px) {
     width: 90%;
   }
@@ -640,9 +633,7 @@ header {
 .all-txt-right-info {
   border: 1px solid #f7d51a;
   max-width: 440px;
-  margin: 0 auto;
-  margin-top: 5%;
-  margin-bottom: 10%;
+  margin: 5% auto 10%;
 }
 
 .left-info-currency {
@@ -661,14 +652,21 @@ header {
   text-align: left;
 }
 
-.one-txt-exchanger, .two-txt-exchanger, .three-txt-exchanger, .four-txt-exchanger {
+.all-cost-number span.active,
+.all-cost-number span:hover {
+  border: 2px solid #d1d8d8;
+}
+
+.four-txt-exchanger,
+.one-txt-exchanger,
+.three-txt-exchanger,
+.two-txt-exchanger {
   display: flex;
   flex-direction: row;
   padding: 1% 5%;
   line-height: 24px;
   max-width: 560px;
   margin: 0 auto;
-
   @media screen and (max-width: 450px) {
     padding: 3% 2%;
   }
@@ -701,51 +699,51 @@ header {
   text-transform: uppercase;
   color: #f7d51a;
 }
+@media screen and (max-width: 415px) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
 
-  @media screen and (max-width: 415px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0;
+.all-select-btp {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.transfer-btn-all {
+  background: url("../img/transfer-black.png") no-repeat;
+  width: 50px;
+  height: 50px;
+  margin-left: 40px;
+  margin-top: 3px;
+
+  &:hover {
+    background: url("../img/transfer-last.png") no-repeat;
   }
+}
 
-  .all-select-btp {
-    display: flex;
-    justify-content: flex-start;
+.transfer-btn-first {
+  position: absolute;
+  z-index: 10;
+  top: 5%;
+  width: 50px;
+  height: 50px;
+  background: url("../img/transfer-black.png") no-repeat;
+
+  &:hover {
+    background: url("../img/transfer-last.png") no-repeat;
   }
+}
 
-  .transfer-btn-all {
-    background: url(../img/transfer-black.png) no-repeat;
-    width: 50px;
-    height: 50px;
-    margin-left: 40px;
-    margin-top: 3px;
+.transfer-btn-last {
+  position: absolute;
+  top: 5%;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+}
 
-    &:hover {
-      background: url(../img/transfer-last.png) no-repeat;
-    }
-  }
-
-  .transfer-btn-first {
-    position: absolute;
-    z-index: 10;
-    top: 5%;
-    width: 50px;
-    height: 50px;
-    background: url(../img/transfer-black.png) no-repeat;
-
-    &:hover {
-      background: url(../img/transfer-last.png) no-repeat;
-    }
-  }
-
-  .transfer-btn-last {
-    position: absolute;
-    top: 5%;
-    z-index: 10;
-    width: 50px;
-    height: 50px;
-  }
 .all-footer-social {
   @media screen and (max-width: 767px) {
     margin-bottom: 20px;
@@ -760,7 +758,6 @@ header {
   padding-bottom: 5%;
   padding-left: 5%;
   text-align: left;
-
   @media screen and (max-width: 1152px) {
     padding-left: 0;
     text-align: center;
@@ -781,7 +778,10 @@ header {
   margin: 2% 0;
 }
 
-.one-btn-txt-info, .two-btn-txt-info, .three-btn-txt-info, .four-btn-txt-info {
+.four-btn-txt-info,
+.one-btn-txt-info,
+.three-btn-txt-info,
+.two-btn-txt-info {
   padding-right: 10%;
 }
 
@@ -818,11 +818,9 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 30px 0;
-
   @media screen and (max-width: 1100px) {
     width: 100%;
   }
-
   @media screen and (max-width: 767px) {
     margin: 0 auto;
     display: flex;
@@ -861,7 +859,6 @@ header {
     font-size: 21px;
     font-weight: 700;
     padding-top: 60px;
-
     @media screen and (max-width: 1152px) {
       padding-top: 30px;
     }
@@ -897,13 +894,13 @@ header {
   font-family: "Open Sans";
   font-size: 12px;
   font-weight: 400;
-
   @media screen and (max-width: 767px) {
     text-align: center;
   }
 }
 
-.footer-rates, .footer-regulations {
+.footer-rates,
+.footer-regulations {
   color: #393939;
   font-size: 12px;
   font-weight: 800;
@@ -947,14 +944,15 @@ header {
 .bd-social-footer-one {
   border: 2px solid #f7d51a;
   border-radius: 30px;
-  padding: 10px 10px;
-  margin: 0px 5px;
+  padding: 10px;
+  margin: 0 5px;
   display: flex;
   align-items: center;
 }
 
 .all-info-txt-btc {
   padding-bottom: 20px;
+
   .min-sum-info {
     font-size: 12px;
     color: #393939;
@@ -968,7 +966,7 @@ header {
   border-radius: 30px;
   padding: 10px 14px;
   min-width: 30px;
-  margin: 0px 5px;
+  margin: 0 5px;
   display: flex;
   align-items: center;
 }
@@ -976,8 +974,8 @@ header {
 .bd-social-footer-three {
   border: 2px solid #f7d51a;
   border-radius: 30px;
-  padding: 8px 8px;
-  margin: 0px 5px;
+  padding: 8px;
+  margin: 0 5px;
   display: flex;
   align-items: center;
 }
@@ -988,5 +986,200 @@ header {
 
   .min-max-info-btc {
     width: 40%;
+  }
+}
+
+.main-sell .sell-revers {
+  padding-left: 221px;
+}
+
+.main-sell .bt-cost-bumber {
+  padding-bottom: 10px;
+}
+
+.main-sell .sell-lable {
+  margin-top: 0;
+}
+
+.my-price-table .tbody .tb-first-child {
+  border-right: 1px solid #f7d51a;
+  text-align: left;
+}
+
+.main-sell .sell-revers {
+  padding-left: 221px;
+}
+
+.main-sell .sell-input {
+  padding-bottom: 10px;
+}
+
+.main-sell .sell-lable {
+  margin-top: 0;
+}
+// ----------application--------------------
+.star-side {
+  overflow: hidden;
+  color: #ebebeb;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.first-dot {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.second-child-dot {
+  position: absolute;
+  z-index: 1;
+}
+
+.first-child-dot,
+.last-child-dot {
+  background: #fff;
+  z-index: 2;
+}
+
+.img-status-block {
+  margin-right: 25px;
+}
+
+.status-block {
+  background-color: #fff9d9;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-left: 5px solid #e2de49;
+  margin-left: 13px;
+  font-family: "Open Sans";
+
+  .first-txt-status {
+    color: #393939;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: "Open Sans";
+    font-size: 16px;
+  }
+
+  .second-txt-status {
+    font-family: "Open Sans";
+    color: #393939;
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .last-txt-status {
+    color: #393939;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+}
+
+.application-number-txt {
+  font-size: 16px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.btn-send-green-status {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.17);
+  background-color: #3bcd78;
+  max-height: 50px;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.application-number-txt {
+  span {
+    color: #393939;
+    font-family: "Open Sans";
+    font-size: 21px;
+    font-weight: 400;
+    font-weight: 700;
+  }
+}
+
+.all-dot {
+  color: #393939;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.star-side-bottom {
+  padding: 30px 0;
+}
+
+.star-side-top {
+  padding-bottom: 30px;
+}
+
+.link-txt-bt {
+  padding: 30px 0;
+
+  p {
+    color: #393939;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .link-bt-left {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  a {
+    color: #f7d51a;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: underline;
+  }
+}
+
+.applic-txt-right {
+  color: #3bcd78;
+  font-family: "Open Sans";
+  font-size: 21px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.applic-txt-right-other {
+  color: #393939;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.issues-side-right-txt {
+  p {
+    font-weight: 600;
+  }
+}
+
+.button-operator-online {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: 1152px) {
+    max-width: 400px;
+  }
+}
+
+.right-side-app {
+  padding-top: 75px;
+  @media screen and (max-width: 1152px) {
+    padding-top: 5px;
   }
 }
