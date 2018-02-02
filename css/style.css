@@ -55,13 +55,20 @@ header {
   letter-spacing: -3.4px; }
 
 .my-nav-link {
+  display: flex;
+  flex-direction: row;
   margin-right: 0 !important; }
+  .my-nav-link ul li a:hover {
+    color: #f7d51a !important; }
   .my-nav-link a {
     color: #393939;
     font-size: 16px;
     font-family: "Open Sans";
     font-weight: 800;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding-right: 20px; }
+    .my-nav-link a:hover {
+      color: #f7d51a !important; }
   .my-nav-link:hover {
     color: #f7d51a; }
 
@@ -115,15 +122,20 @@ header {
     font-size: 24px !important;
     margin-left: 5%; }
 
-.navigation-link-top li a:hover {
-  color: #f7d51a !important; }
+.navigation-link-top ul li a {
+  color: #393939; }
+  .navigation-link-top ul li a:hover {
+    color: #f7d51a !important; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #393939; }
 
 .head-container .collapse-container-top {
   display: flex !important;
   justify-content: space-between;
   align-items: center; }
   .head-container .collapse-container-top a {
-    color: #393939 !important; }
+    color: #393939; }
 
 .my-city-select a {
   min-height: 35px;
@@ -174,7 +186,7 @@ header {
   @media screen and (max-width: 1130px) {
     .head-container {
       padding: 0 5%; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 900px) {
     .head-container {
       flex-direction: column; } }
 
@@ -404,10 +416,10 @@ header {
   font-weight: 400; }
 
 .euro-cost {
-  padding: 2px 12px !important; }
+  padding: 2px 12px !important !important; }
 
 .usd-cost {
-  padding: 2px 13px !important; }
+  padding: 2px 13px !important !important; }
 
 .all-cost-number {
   display: flex;
@@ -962,11 +974,16 @@ header {
 .basic-contacts p {
   display: flex;
   align-items: center; }
+.basic-contacts a {
+  color: #393939; }
 .basic-contacts span :first-child {
   margin-right: 0; }
 .basic-contacts span :last-child {
   margin-left: 5px; }
-.basic-contacts .fa-telegram, .basic-contacts .fa-viber, .basic-contacts .fa-skype, .basic-contacts .fa-envelope {
+.basic-contacts .fa-envelope,
+.basic-contacts .fa-skype,
+.basic-contacts .fa-telegram,
+.basic-contacts .fa-viber {
   font-size: 30px;
   margin: 0 20px; }
 
@@ -981,7 +998,8 @@ header {
   font-family: "Open Sans";
   font-size: 12px;
   font-weight: 400;
-  line-height: 16px; }
+  line-height: 16px;
+  text-align: left; }
 
 .my-panel-title a {
   color: #393939;
@@ -996,13 +1014,20 @@ header {
 .my-panel-default {
   border: none; }
   .my-panel-default .panel-heading {
-    background: #fff; }
+    background: #fff;
+    text-align: left;
+    padding-left: 0; }
+    .my-panel-default .panel-heading i {
+      font-size: 10px;
+      padding-left: 3px; }
 
 .txt-answer-faq {
   color: #3bcd78;
   font-family: "Open Sans";
   font-size: 21px;
-  font-weight: 700; }
+  font-weight: 700;
+  text-align: left;
+  padding-left: 20px; }
 
 .issues-side-right-txt {
   color: #393939;
@@ -1039,5 +1064,20 @@ header {
   font-size: 16px;
   font-weight: 400;
   padding-top: 35px; }
+
+.personal-area a:hover {
+  color: #f8d33e;
+  text-decoration: none; }
+.personal-area a .fa-user {
+  margin-left: 10px; }
+
+.add-new-user-top a span,
+.enter-site-top a span {
+  margin-left: 5px;
+  margin-right: 10px; }
+.add-new-user-top a:hover,
+.enter-site-top a:hover {
+  color: #f8d33e;
+  text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
