@@ -62,6 +62,8 @@ header {
     font-family: "Open Sans";
     font-weight: 800;
     text-transform: uppercase; }
+  .my-nav-link:hover {
+    color: #f7d51a; }
 
 .all-bg {
   background: #dee7f3;
@@ -113,12 +115,25 @@ header {
     font-size: 24px !important;
     margin-left: 5%; }
 
+.navigation-link-top li a:hover {
+  color: #f7d51a !important; }
+
 .head-container .collapse-container-top {
   display: flex !important;
   justify-content: space-between;
   align-items: center; }
   .head-container .collapse-container-top a {
     color: #393939 !important; }
+
+.my-city-select a {
+  min-height: 35px;
+  display: flex;
+  align-items: center; }
+
+.bootstrap-select.btn-group .dropdown-menu li a {
+  min-height: 35px;
+  display: flex;
+  align-items: center; }
 
 .my-price-table {
   margin-bottom: 0; }
@@ -133,7 +148,7 @@ header {
     border-color: #f7d51a !important;
     color: #393939;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     font-family: "Open Sans";
     text-transform: uppercase; }
     .my-price-table tbody tr td span {
@@ -389,10 +404,10 @@ header {
   font-weight: 400; }
 
 .euro-cost {
-  padding: 2px 12px !important !important; }
+  padding: 2px 12px !important; }
 
 .usd-cost {
-  padding: 2px 13px !important !important; }
+  padding: 2px 13px !important; }
 
 .all-cost-number {
   display: flex;
@@ -460,8 +475,16 @@ header {
   text-transform: uppercase;
   margin-bottom: 20px; }
   .btn-next-left-side:hover {
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.17) !important;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    background-color: #3bcd78 !important;
+    color: #fff; }
+  .btn-next-left-side:active {
     box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.17);
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #3bcd78;
+    color: #fff; }
+  .btn-next-left-side:focus {
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.17);
     background-color: #3bcd78;
     color: #fff; }
   @media screen and (max-width: 415px) {
@@ -884,7 +907,8 @@ header {
     font-weight: 700; }
   .link-txt-bt .link-bt-left {
     font-size: 14px;
-    font-weight: 400; }
+    font-weight: 400;
+    font-family: "Open Sans"; }
   .link-txt-bt a {
     color: #f7d51a;
     font-weight: 400;
@@ -922,5 +946,98 @@ header {
   @media screen and (max-width: 1152px) {
     .right-side-app {
       padding-top: 5px; } }
+
+.status-block-confirm {
+  background-color: #a1f3c3;
+  border-left: 5px solid #3acc7c !important; }
+
+.status-block-rejected {
+  background-color: #efd6d1;
+  border-left: 5px solid #ef3f3f !important; }
+
+.btc-status {
+  border-left: 5px solid #fcb036 !important;
+  background-color: #f7ebac; }
+
+.basic-contacts p {
+  display: flex;
+  align-items: center; }
+.basic-contacts span :first-child {
+  margin-right: 0; }
+.basic-contacts span :last-child {
+  margin-left: 5px; }
+.basic-contacts .fa-telegram, .basic-contacts .fa-viber, .basic-contacts .fa-skype, .basic-contacts .fa-envelope {
+  font-size: 30px;
+  margin: 0 20px; }
+
+.txt-feedback {
+  height: 150px;
+  padding-left: 15px;
+  padding-top: 5px; }
+
+.panel-body-txt {
+  opacity: 0.8;
+  color: #393939;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px; }
+
+.my-panel-title a {
+  color: #393939;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 36px; }
+
+.panel-body-txt {
+  border-left: 5px solid #eaeaea; }
+
+.my-panel-default {
+  border: none; }
+  .my-panel-default .panel-heading {
+    background: #fff; }
+
+.txt-answer-faq {
+  color: #3bcd78;
+  font-family: "Open Sans";
+  font-size: 21px;
+  font-weight: 700; }
+
+.issues-side-right-txt {
+  color: #393939;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400; }
+
+.time-txt-top :first-child {
+  color: #393939;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400; }
+.time-txt-top :last-child {
+  color: #393939;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 28px; }
+
+.all-txt-sup-top {
+  padding-top: 25px; }
+
+.contacts-right-side-app {
+  padding-top: 50px; }
+
+.cont-number {
+  color: #393939;
+  font-family: "Open Sans";
+  font-size: 28px;
+  font-weight: 400; }
+
+.my-link-bt-left {
+  color: #393939;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 35px; }
 
 /*# sourceMappingURL=style.css.map */
