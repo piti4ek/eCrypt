@@ -335,8 +335,10 @@
     @media screen and (max-width: 1152px) {
       width: 100%;
     }
+
     @media screen and (max-width: 415px) {
-      padding: 0 5%;
+      width: 85%;
+      margin: 0 auto;
     }
   }
 
@@ -361,44 +363,62 @@
     font-size: 18px;
   }
 
+  .all-cont-mobile {
+    @media screen and (max-width: 415px) {
+      width: 85%!important;
+      margin: 0 auto;
+    }
+  }
+
   .container-side-left {
     width: 405px;
     margin: 0 auto;
-    @media screen and (max-width: 405px) {
-      width: 100%;
+    @media screen and (max-width: 415px) {
+      width: 100%!important;
     }
   }
 
   .all-cost {
-    :first-child {
-      margin-left: 0;
-    }
+    padding-left: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 
-    :last-child {
-      margin-right: 0;
+    @media screen and (max-width: 415px) {
+      padding-left: 0px;
     }
-  }
-
-  .grn-cost {
-    padding: 2px 10px;
 
     a {
+      border: 2px solid #393939;
+      text-align: center;
+      border-radius: 35px;
+      min-width: 40px;
+      line-height: 35px;
       color: #565757;
       font-size: 26px;
       font-weight: 400;
-      text-decoration: none;
+
+      &:hover {
+        color: #dddddd!important;
+        border-color: #dddddd!important;
+      }
+    }
+
+    @media screen and (max-width: 415px) {
+      width: 50%;
     }
   }
 
   .btc-cost {
-    padding: 1px 12px 4px;
-    margin-right: 0!important;
+    &:hover {
+      border: none!important;
+      outline: none!important;
+    }
 
-    a {
-      color: #565757;
-      font-size: 26px;
-      font-weight: 400;
-      text-decoration: none;
+    &:focus {
+      border: none!important;
+      outline: none!important;
     }
   }
 
@@ -509,11 +529,24 @@
   }
 
   .my-btp-select {
+
+    @media screen and (max-width: 415px) {
+      width: 100%!important;
+    }
+
     button {
-      width: 250px!important;
+      width: 250px;
       border-radius: 0;
       height: 52px;
       border: 2px solid #ececec;
+
+      @media screen and (max-width: 415px) {
+        width: 100%!important;
+      }
+
+      @media screen and (max-width: 250px) {
+        width: 100%!important;
+      }
 
       &:active {
         border: 2px solid #393939;
@@ -531,16 +564,38 @@
   }
 
   .my-city-select {
+
+    width: 100%!important;
+
     button {
-      width: 400px!important;
+      width: 406px;
       border-radius: 0;
       height: 52px;
       border: 2px solid #ececec;
+
+      @media screen and (max-width: 415px) {
+        width: 100%!important;
+      }
     }
 
     .dropdown-menu {
       width: 400px!important;
       border-radius: 0;
+    }
+  }
+
+  .bootstrap-select>select {
+    left: 0;
+  }
+
+  .captcha-privacy {
+
+    img {
+      max-width: 300px;
+
+      @media screen and (max-width: 300px) {
+        width: 100%;
+      }
     }
   }
 
@@ -576,7 +631,7 @@
     font-family: "Open Sans";
     font-size: 15px;
     font-weight: 400;
-    margin: 10px 0 5px;
+    margin: 20px 0 10px;
   }
 
   .gr-txt-cost-info {
@@ -584,14 +639,6 @@
     font-family: "Open Sans";
     font-size: 12px;
     font-weight: 400;
-  }
-
-  .euro-cost {
-    padding: 2px 12px!important !important;
-  }
-
-  .usd-cost {
-    padding: 2px 13px!important !important;
   }
 
   .all-cost-number {
@@ -608,22 +655,6 @@
         text-decoration: none;
       }
     }
-
-    span {
-      color: #565757;
-      font-family: "Open Sans";
-      font-size: 26px;
-      font-weight: 400;
-      border: 2px solid #565757;
-      border-radius: 30px;
-      min-width: 40px;
-      text-align: center;
-      margin: 0 5px 0 15px;
-
-      &:hover {
-        border: 2px solid #d1d8d8;
-      }
-    }
   }
 
   .my-number-cost {
@@ -632,21 +663,34 @@
     height: 52px;
     border: 2px solid #ebebeb;
     opacity: 0.8;
+    max-width: 250px;
+    min-width: 250px;
 
     &:focus {
       box-shadow: 0 0 16px 3px rgba(247, 213, 26, 0.31);
       border: 2px solid #393939;
     }
+
     @media screen and (max-width: 415px) {
       margin-top: 15px;
       width: 100%;
-      max-width: 100%!important;
+      max-width: 100%;
     }
+
+    @media screen and (max-width: 250px) {
+      width: 100%!important;
+    }
+  }
+
+  .bottom-inputs-req {
+    width: 100%!important;
+    max-width: 100%;
+    min-width: 0;
   }
 
   .bt-inputs-left {
     margin-bottom: 5%;
-    width: 400px;
+    width: 415px;
   }
 
   .next-btn-txt {
@@ -780,16 +824,28 @@
     text-transform: uppercase;
     color: #f7d51a;
   }
-  @media screen and (max-width: 415px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0;
-  }
 
   .all-select-btp {
     display: flex;
     justify-content: flex-start;
+
+    @media screen and (max-width: 415px) {
+      flex-direction: column;
+    }
+
+    a {
+      @media screen and (max-width: 415px) {
+        display: flex;
+        justify-content: center;
+      }
+
+      .transfer-btn-all {
+        @media screen and (max-width: 415px) {
+          margin-left: 0;
+          margin-top: 10px;
+        }
+      }
+    }
   }
 
   .transfer-btn-all {
@@ -870,7 +926,29 @@
     padding-bottom: 15px;
     display: flex;
     justify-content: flex-start!important;
+
+    a {
+      margin-left: 13px;
+      border: 2px solid #393939;
+      text-align: center;
+      border-radius: 35px;
+      min-width: 40px;
+      line-height: 35px;
+      color: #565757;
+      font-size: 26px;
+      font-weight: 400;
+
+      &:hover {
+        color: #dddddd!important;
+        border-color: #dddddd!important;
+      }
+
+      @media screen and (max-width: 415px) {
+        margin-left: 0;
+      }
+    }
   }
+
 
   .all-txt-info-btc {
     display: flex;
@@ -930,6 +1008,10 @@
 
     h1 {
       margin-bottom: 0;
+
+      @media screen and (max-width: 380px) {
+        font-size: 34px;
+      }
     }
   }
 
@@ -966,7 +1048,11 @@
 
   .all-btn-inp {
     input {
-      max-width: 250px;
+      @media screen and (max-width: 250px) {
+        width: 100%!important;
+        min-width: 0px!important;
+        max-width: 100%!important;
+      }
     }
   }
 
@@ -1452,7 +1538,24 @@
             border-right: 1px solid #f7d51a!important;
             border-color: #f7d51a!important;
           }
+
+          @media screen and (max-width: 480px) {
+            font-size: 14px;
+          }
         }
+
+        @media screen and (max-width: 480px) {
+          font-size: 14px;
+        }
+
+        td {
+          @media screen and (max-width: 480px) {
+            font-size: 14px;
+          }
+        }
+      }
+      @media screen and (max-width: 480px) {
+        font-size: 14px;
       }
     }
   }
@@ -1523,6 +1626,11 @@
 
     @media screen and (max-width: 1100px) {
       width: 100%;
+    }
+
+    @media screen and (max-width: 860px) {
+      display: flex;
+      flex-direction: column;
     }
 
     @media screen and (max-width: 767px) {

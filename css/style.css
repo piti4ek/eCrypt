@@ -216,7 +216,8 @@
       width: 100%; } }
   @media screen and (max-width: 415px) {
     .e-crypta .left-side {
-      padding: 0 5%; } }
+      width: 85%;
+      margin: 0 auto; } }
 .e-crypta .right-side {
   width: 50%;
   text-align: center;
@@ -230,31 +231,46 @@
   color: #fbb314 !important; }
 .e-crypta .city-txt {
   font-size: 18px; }
+@media screen and (max-width: 415px) {
+  .e-crypta .all-cont-mobile {
+    width: 85% !important;
+    margin: 0 auto; } }
 .e-crypta .container-side-left {
   width: 405px;
   margin: 0 auto; }
-  @media screen and (max-width: 405px) {
+  @media screen and (max-width: 415px) {
     .e-crypta .container-side-left {
-      width: 100%; } }
-.e-crypta .all-cost :first-child {
-  margin-left: 0; }
-.e-crypta .all-cost :last-child {
-  margin-right: 0; }
-.e-crypta .grn-cost {
-  padding: 2px 10px; }
-  .e-crypta .grn-cost a {
+      width: 100% !important; } }
+.e-crypta .all-cost {
+  padding-left: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%; }
+  @media screen and (max-width: 415px) {
+    .e-crypta .all-cost {
+      padding-left: 0px; } }
+  .e-crypta .all-cost a {
+    border: 2px solid #393939;
+    text-align: center;
+    border-radius: 35px;
+    min-width: 40px;
+    line-height: 35px;
     color: #565757;
     font-size: 26px;
-    font-weight: 400;
-    text-decoration: none; }
-.e-crypta .btc-cost {
-  padding: 1px 12px 4px;
-  margin-right: 0 !important; }
-  .e-crypta .btc-cost a {
-    color: #565757;
-    font-size: 26px;
-    font-weight: 400;
-    text-decoration: none; }
+    font-weight: 400; }
+    .e-crypta .all-cost a:hover {
+      color: #dddddd !important;
+      border-color: #dddddd !important; }
+  @media screen and (max-width: 415px) {
+    .e-crypta .all-cost {
+      width: 50%; } }
+.e-crypta .btc-cost:hover {
+  border: none !important;
+  outline: none !important; }
+.e-crypta .btc-cost:focus {
+  border: none !important;
+  outline: none !important; }
 .e-crypta .side-band {
   background-color: #f6f6f6;
   height: auto;
@@ -322,11 +338,20 @@
 .e-crypta .active-two-select-side {
   border: 2px solid #ebebeb;
   opacity: 0.8; }
+@media screen and (max-width: 415px) {
+  .e-crypta .my-btp-select {
+    width: 100% !important; } }
 .e-crypta .my-btp-select button {
-  width: 250px !important;
+  width: 250px;
   border-radius: 0;
   height: 52px;
   border: 2px solid #ececec; }
+  @media screen and (max-width: 415px) {
+    .e-crypta .my-btp-select button {
+      width: 100% !important; } }
+  @media screen and (max-width: 250px) {
+    .e-crypta .my-btp-select button {
+      width: 100% !important; } }
   .e-crypta .my-btp-select button:active {
     border: 2px solid #393939; }
   .e-crypta .my-btp-select button:focus {
@@ -334,14 +359,26 @@
 .e-crypta .my-btp-select .dropdown-menu {
   width: 250px !important;
   border-radius: 0; }
-.e-crypta .my-city-select button {
-  width: 400px !important;
-  border-radius: 0;
-  height: 52px;
-  border: 2px solid #ececec; }
-.e-crypta .my-city-select .dropdown-menu {
-  width: 400px !important;
-  border-radius: 0; }
+.e-crypta .my-city-select {
+  width: 100% !important; }
+  .e-crypta .my-city-select button {
+    width: 406px;
+    border-radius: 0;
+    height: 52px;
+    border: 2px solid #ececec; }
+    @media screen and (max-width: 415px) {
+      .e-crypta .my-city-select button {
+        width: 100% !important; } }
+  .e-crypta .my-city-select .dropdown-menu {
+    width: 400px !important;
+    border-radius: 0; }
+.e-crypta .bootstrap-select > select {
+  left: 0; }
+.e-crypta .captcha-privacy img {
+  max-width: 300px; }
+  @media screen and (max-width: 300px) {
+    .e-crypta .captcha-privacy img {
+      width: 100%; } }
 .e-crypta .my-dropdown-toggle {
   min-width: 50px; }
 .e-crypta .requisites-txt-left {
@@ -366,16 +403,12 @@
   font-family: "Open Sans";
   font-size: 15px;
   font-weight: 400;
-  margin: 10px 0 5px; }
+  margin: 20px 0 10px; }
 .e-crypta .gr-txt-cost-info {
   color: #3bcd78;
   font-family: "Open Sans";
   font-size: 12px;
   font-weight: 400; }
-.e-crypta .euro-cost {
-  padding: 2px 12px !important !important; }
-.e-crypta .usd-cost {
-  padding: 2px 13px !important !important; }
 .e-crypta .all-cost-number {
   display: flex;
   flex-direction: row;
@@ -386,24 +419,14 @@
       flex-direction: column-reverse; } }
   .e-crypta .all-cost-number a:hover {
     text-decoration: none; }
-  .e-crypta .all-cost-number span {
-    color: #565757;
-    font-family: "Open Sans";
-    font-size: 26px;
-    font-weight: 400;
-    border: 2px solid #565757;
-    border-radius: 30px;
-    min-width: 40px;
-    text-align: center;
-    margin: 0 5px 0 15px; }
-    .e-crypta .all-cost-number span:hover {
-      border: 2px solid #d1d8d8; }
 .e-crypta .my-number-cost {
   border-radius: 0;
   width: 250px;
   height: 52px;
   border: 2px solid #ebebeb;
-  opacity: 0.8; }
+  opacity: 0.8;
+  max-width: 250px;
+  min-width: 250px; }
   .e-crypta .my-number-cost:focus {
     box-shadow: 0 0 16px 3px rgba(247, 213, 26, 0.31);
     border: 2px solid #393939; }
@@ -411,10 +434,17 @@
     .e-crypta .my-number-cost {
       margin-top: 15px;
       width: 100%;
-      max-width: 100% !important; } }
+      max-width: 100%; } }
+  @media screen and (max-width: 250px) {
+    .e-crypta .my-number-cost {
+      width: 100% !important; } }
+.e-crypta .bottom-inputs-req {
+  width: 100% !important;
+  max-width: 100%;
+  min-width: 0; }
 .e-crypta .bt-inputs-left {
   margin-bottom: 5%;
-  width: 400px; }
+  width: 415px; }
 .e-crypta .next-btn-txt {
   color: #d3d3d3;
   font-family: "Open Sans";
@@ -518,15 +548,20 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #f7d51a; }
-@media screen and (max-width: 415px) {
-  .e-crypta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0; } }
 .e-crypta .all-select-btp {
   display: flex;
   justify-content: flex-start; }
+  @media screen and (max-width: 415px) {
+    .e-crypta .all-select-btp {
+      flex-direction: column; } }
+  @media screen and (max-width: 415px) {
+    .e-crypta .all-select-btp a {
+      display: flex;
+      justify-content: center; } }
+  @media screen and (max-width: 415px) {
+    .e-crypta .all-select-btp a .transfer-btn-all {
+      margin-left: 0;
+      margin-top: 10px; } }
 .e-crypta .transfer-btn-all {
   background: url("../img/transfer-black.png") no-repeat;
   width: 50px;
@@ -582,6 +617,22 @@
   padding-bottom: 15px;
   display: flex;
   justify-content: flex-start !important; }
+  .e-crypta .bt-cost-bumber a {
+    margin-left: 13px;
+    border: 2px solid #393939;
+    text-align: center;
+    border-radius: 35px;
+    min-width: 40px;
+    line-height: 35px;
+    color: #565757;
+    font-size: 26px;
+    font-weight: 400; }
+    .e-crypta .bt-cost-bumber a:hover {
+      color: #dddddd !important;
+      border-color: #dddddd !important; }
+    @media screen and (max-width: 415px) {
+      .e-crypta .bt-cost-bumber a {
+        margin-left: 0; } }
 .e-crypta .all-txt-info-btc {
   display: flex;
   flex-direction: row; }
@@ -625,6 +676,9 @@
       text-decoration: none !important; }
   .e-crypta .my-top-bar h1 {
     margin-bottom: 0; }
+    @media screen and (max-width: 380px) {
+      .e-crypta .my-top-bar h1 {
+        font-size: 34px; } }
 .e-crypta .issues-side-right h4 {
   color: #3bcd78;
   font-family: "Open Sans";
@@ -646,8 +700,11 @@
     font-weight: 700; }
     .e-crypta .issues-side-right p a:hover {
       color: #393939; }
-.e-crypta .all-btn-inp input {
-  max-width: 250px; }
+@media screen and (max-width: 250px) {
+  .e-crypta .all-btn-inp input {
+    width: 100% !important;
+    min-width: 0px !important;
+    max-width: 100% !important; } }
 .e-crypta .mail-footer {
   color: #393939;
   font-family: "Open Sans";
@@ -959,6 +1016,18 @@
   line-height: 60px;
   border-right: 1px solid #f7d51a !important;
   border-color: #f7d51a !important; }
+@media screen and (max-width: 480px) {
+  .e-crypta .my-price-table thead tr th {
+    font-size: 14px; } }
+@media screen and (max-width: 480px) {
+  .e-crypta .my-price-table thead tr {
+    font-size: 14px; } }
+@media screen and (max-width: 480px) {
+  .e-crypta .my-price-table thead tr td {
+    font-size: 14px; } }
+@media screen and (max-width: 480px) {
+  .e-crypta .my-price-table thead {
+    font-size: 14px; } }
 .e-crypta .after-child-yellow {
   text-align: center;
   border-right: 1px solid #f9eeb4 !important;
@@ -1005,6 +1074,10 @@
   @media screen and (max-width: 1100px) {
     .e-crypta .all-nav-btn {
       width: 100%; } }
+  @media screen and (max-width: 860px) {
+    .e-crypta .all-nav-btn {
+      display: flex;
+      flex-direction: column; } }
   @media screen and (max-width: 767px) {
     .e-crypta .all-nav-btn {
       width: 100%;

@@ -16,59 +16,57 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="all-nav-btn">
-
-
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div class="container-logo">
-            <div class="navbar-header my-top-bar">
-              <a href="#">
-                <h1 class="brand-name-first" href="#">E</h1>
-                <h1 class="brand-name-second" href="#">-</h1>
-                <h1 class="brand-name-last" href="#">crypta</h1>
-                <h1 class="brand-name-com" href="#">com</h1>
-              </a>
-            </div>
-            <div class="litle-txt-logo">
-              <p>Обмен криптовалюты Запорожье, Днепр</p>
+            <div class="container-logo">
+              <div class="navbar-header my-top-bar">
+                <a href="#">
+                  <h1 class="brand-name-first" href="#">E</h1>
+                  <h1 class="brand-name-second" href="#">-</h1>
+                  <h1 class="brand-name-last" href="#">crypta</h1>
+                  <h1 class="brand-name-com" href="#">com</h1>
+                </a>
+              </div>
+              <div class="litle-txt-logo">
+                <p>Обмен криптовалюты Запорожье, Днепр</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="collapse navbar-collapse collapse-container-top" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav my-nav-link">
-            <li>
+          <div class="collapse navbar-collapse collapse-container-top" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav my-nav-link">
+              <li>
                 <a href="#">
                   Скидки %
                 </a>
-            </li>
-            <li>
+              </li>
+              <li>
                 <a href="#">
                   Контакты
                 </a>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav my-nav-link">
-            <li>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav my-nav-link">
+              <li>
                 <a href="#">
                   <i class="fas fa-key"></i>
                   Вход
                 </a>
-            </li>
-            <li>
+              </li>
+              <li>
                 <a href="#">
                   <i class="fas fa-user-plus"></i>
                   Регистрация
                 </a>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-        </div>
-        </div>
+      </div>
       </div>
     </nav>
   </header>
@@ -82,23 +80,28 @@
             <div class="all-cost-number all-btn-inp">
               <input type="number" class="form-control my-number-cost" placeholder="0.0000000" aria-describedby="basic-addon1">
               <div class="all-cost">
-                <a href="#"><div class="grn-cost">₴</div></a>
-                <a href="#"><div class="euro-cost">€</div></a>
-                <a href="#"><div class="usd-cost">$</div></a>
+                <a href="#">
+                  <div class="grn-cost">₴</div>
+                </a>
+                <a href="#">
+                  <div class="euro-cost">€</div>
+                </a>
+                <a href="#">
+                  <div class="usd-cost">$</div>
+                </a>
               </div>
             </div>
             <div class="cost-label">Скорость зачисления на ваш кошелек</div>
-            <div class="all-select-btp">
+            <!-- <div class="all-select-btp">
               <select class="selectpicker my-btp-select">
-              <option>Mustard</option>
-              <option>Ketchup</option>
-              <option>Relish</option>
-            </select>
-              <a href="">
+                <option>Mustard</option>
+                <option>Ketchup</option>
+                <option>Relish</option>
+              </select>
+              <a href="#">
                 <div class="transfer-btn-all"></div>
               </a>
-            </div>
-
+            </div> -->
             <div class="cost-label">Получаете</div>
             <div class="all-cost-number bt-cost-bumber">
               <input type="number" class="form-control my-number-cost" placeholder="0.0000000" aria-describedby="basic-addon1">
@@ -118,9 +121,9 @@
             </div>
             <p class="txt-info-btc">На момент сделки курс и комиссия будет пересчитана!</p>
             <p class="requisites-txt-left">Ваши реквизиты</p>
-            <input type="text" class="form-control my-number-cost bt-inputs-left" placeholder="Имя" aria-describedby="basic-addon1">
-            <input type="tel" class="form-control my-number-cost bt-inputs-left" placeholder="Телефон" aria-describedby="basic-addon1">
-            <input type="text" class="form-control my-number-cost bt-inputs-left" placeholder="Адрес Bitcoin" aria-describedby="basic-addon1">
+            <input type="text" class="form-control my-number-cost bt-inputs-left bottom-inputs-req" placeholder="Имя" aria-describedby="basic-addon1">
+            <input type="tel" class="form-control my-number-cost bt-inputs-left bottom-inputs-req" placeholder="Телефон" aria-describedby="basic-addon1">
+            <input type="text" class="form-control my-number-cost bt-inputs-left bottom-inputs-req" placeholder="Адрес Bitcoin" aria-describedby="basic-addon1">
             <select class="selectpicker my-city-select">
               <option>Mustard</option>
               <option>Ketchup</option>
@@ -128,7 +131,7 @@
             </select>
             <div class="txt-next-operator">
               <p>Нажимая кнопку "ДАЛЕЕ" вы подтверждаете свое согласие с <a href="#">Правилами предоставления услуг</a> сервиса «Обменник» и <b>передаете заявку оператору</b></p>
-              <div class="">
+              <div class="captcha-privacy">
                 <img src="img/robot.jpg" alt="">
               </div>
             </div>
@@ -188,7 +191,6 @@
                 </tr>
               </tbody>
             </table>
-
           </div>
           <p class="terms-use-txt">Правила пользования обменником:</p>
           <div class="all-exchanger-txt">
