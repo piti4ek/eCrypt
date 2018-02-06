@@ -71,7 +71,6 @@
     display: flex;
     flex-direction: row;
     margin-right: 0!important;
-
     @media screen and (max-width: 767px) {
       flex-direction: column;
     }
@@ -335,7 +334,6 @@
     @media screen and (max-width: 1152px) {
       width: 100%;
     }
-
     @media screen and (max-width: 415px) {
       width: 85%;
       margin: 0 auto;
@@ -378,15 +376,14 @@
     }
   }
 
-  .all-cost {
+  .all-cost-wide {
     padding-left: 13px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-
     @media screen and (max-width: 415px) {
-      padding-left: 0px;
+      padding-left: 0;
     }
 
     a {
@@ -404,13 +401,126 @@
         border-color: #dddddd!important;
       }
     }
-
     @media screen and (max-width: 415px) {
       width: 50%;
+    }
+
+    @media screen and (max-width: 415px) {
+      display: none;
+    }
+  }
+
+  .btc-all-cost {
+    @media screen and (max-width: 415px) {
+      display: none;
+    }
+  }
+
+  .all-mobile-traide-ico {
+    @media screen and (max-width: 415px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 12px;
+    }
+
+    @media screen and (min-width: 416px) {
+      display: none;
+    }
+  }
+
+  .all-cost-narrow {
+    @media screen and (max-width: 415px) {
+      display: flex;
+      flex-direction: row;
+    }
+
+    a {
+      text-decoration: none;
+      color: #dddddd!important;
+      border-color: #dddddd!important;
+    }
+
+    .grn-coin, .euro-coin, .usd-coin {
+      border: 2px solid #393939;
+      height: 40px;
+      border-radius: 40px;
+      width: 40px;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      font-size: 24px;
+      color: #393939;
+
+      &:hover {
+        text-decoration: none!important;
+        color: #dddddd!important;
+        border-color: #dddddd!important;
+      }
+
+      @media screen and (max-width: 415px) {
+        margin: 0 10px;
+      }
+    }
+  }
+
+  .all-to-btc {
+    @media screen and (max-width: 415px) {
+      margin: 0 10px;
+    }
+
+    a {
+      &:hover {
+        text-decoration: none;
+        color: #dddddd !important;
+        border-color: #dddddd !important;
+      }
+    }
+  }
+
+  .to-btc-href {
+    border: 2px solid #393939;
+    height: 40px;
+    border-radius: 40px;
+    width: 40px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: #393939;
+  }
+
+  .transfer-horiz {
+    margin-top: 5px;
+  }
+
+  .transfer-btn-transform {
+    background: url(../img/transfer-black.png) no-repeat;
+    width: 50px;
+    height: 50px;
+
+    @media screen and (max-width: 415px) {
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+
+    &:hover {
+      background: url(../img/transfer-last.png) no-repeat;
     }
   }
 
   .btc-cost {
+
+    @media screen and (max-width: 415px) {
+      display: none;
+    }
+
     &:hover {
       border: none!important;
       outline: none!important;
@@ -529,7 +639,6 @@
   }
 
   .my-btp-select {
-
     @media screen and (max-width: 415px) {
       width: 100%!important;
     }
@@ -539,11 +648,9 @@
       border-radius: 0;
       height: 52px;
       border: 2px solid #ececec;
-
       @media screen and (max-width: 415px) {
         width: 100%!important;
       }
-
       @media screen and (max-width: 250px) {
         width: 100%!important;
       }
@@ -564,7 +671,6 @@
   }
 
   .my-city-select {
-
     width: 100%!important;
 
     button {
@@ -572,7 +678,6 @@
       border-radius: 0;
       height: 52px;
       border: 2px solid #ececec;
-
       @media screen and (max-width: 415px) {
         width: 100%!important;
       }
@@ -584,14 +689,17 @@
     }
   }
 
-  .bootstrap-select>select {
+  .bootstrap-select > select {
     left: 0;
   }
 
   .captcha-privacy {
-
     img {
       max-width: 300px;
+
+      @media screen and (max-width: 415px) {
+        width: 100%!important;
+      }
 
       @media screen and (max-width: 300px) {
         width: 100%;
@@ -632,6 +740,10 @@
     font-size: 15px;
     font-weight: 400;
     margin: 20px 0 10px;
+
+    @media screen and (max-width: 415px) {
+      display: none;
+    }
   }
 
   .gr-txt-cost-info {
@@ -670,13 +782,11 @@
       box-shadow: 0 0 16px 3px rgba(247, 213, 26, 0.31);
       border: 2px solid #393939;
     }
-
     @media screen and (max-width: 415px) {
       margin-top: 15px;
       width: 100%;
       max-width: 100%;
     }
-
     @media screen and (max-width: 250px) {
       width: 100%!important;
     }
@@ -833,6 +943,10 @@
       flex-direction: column;
     }
 
+    @media screen and (max-width: 415px) {
+      display: none;
+    }
+
     a {
       @media screen and (max-width: 415px) {
         display: flex;
@@ -942,13 +1056,11 @@
         color: #dddddd!important;
         border-color: #dddddd!important;
       }
-
       @media screen and (max-width: 415px) {
         margin-left: 0;
       }
     }
   }
-
 
   .all-txt-info-btc {
     display: flex;
@@ -1008,7 +1120,6 @@
 
     h1 {
       margin-bottom: 0;
-
       @media screen and (max-width: 380px) {
         font-size: 34px;
       }
@@ -1185,7 +1296,6 @@
     margin-top: 0;
   }
   // ----------application--------------------
-
   .star-side {
     overflow: hidden;
     color: #ebebeb;
@@ -1538,12 +1648,10 @@
             border-right: 1px solid #f7d51a!important;
             border-color: #f7d51a!important;
           }
-
           @media screen and (max-width: 480px) {
             font-size: 14px;
           }
         }
-
         @media screen and (max-width: 480px) {
           font-size: 14px;
         }
@@ -1623,20 +1731,53 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     @media screen and (max-width: 1100px) {
       width: 100%;
     }
-
     @media screen and (max-width: 860px) {
       display: flex;
       flex-direction: column;
     }
-
     @media screen and (max-width: 767px) {
       width: 100%;
       display: block;
     }
+  }
+
+  .green-privacy-txt {
+    color: #3bcd78;
+    font-family: "Open Sans";
+    font-size: 21px;
+    font-weight: 700;
+    margin-top: 0;
+  }
+
+  .left-side-privacy {
+    padding: 4% 5% 4% 5%;
+
+    @media screen and (max-width: 1152px) {
+      padding: 4% 5% 0% 5%;
+    }
+  }
+
+  .right-txt-privacy {
+    text-align: left;
+    padding: 7% 5% 7% 5%;
+
+    @media screen and (max-width: 1152px) {
+      padding: 0% 5% 3% 5%;
+    }
+  }
+
+  .all-paragraph-txt {
+    b {
+      padding: 10px 0;
+    }
+  }
+
+  .right-side-privacy {
+    margin-top: 0;
+    padding-top: 0;
   }
 }
 
@@ -1644,5 +1785,23 @@
   .navbar-default {
     margin-bottom: 0;
     padding: 10px 0;
+  }
+}
+
+.e-crypta .all-cost-number a.active {
+  color: #d1d8d8;
+  border: 2px solid #d1d8d8;
+}
+
+.container-content {
+  .left-side {
+    .green-privacy-txt {
+      color: #3bcd78;
+      font-family: "Open Sans";
+      font-size: 21px;
+      font-weight: 700;
+      text-align: left;
+      padding-bottom: 20px;
+    }
   }
 }

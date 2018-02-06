@@ -241,16 +241,16 @@
   @media screen and (max-width: 415px) {
     .e-crypta .container-side-left {
       width: 100% !important; } }
-.e-crypta .all-cost {
+.e-crypta .all-cost-wide {
   padding-left: 13px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%; }
   @media screen and (max-width: 415px) {
-    .e-crypta .all-cost {
-      padding-left: 0px; } }
-  .e-crypta .all-cost a {
+    .e-crypta .all-cost-wide {
+      padding-left: 0; } }
+  .e-crypta .all-cost-wide a {
     border: 2px solid #393939;
     text-align: center;
     border-radius: 35px;
@@ -259,12 +259,90 @@
     color: #565757;
     font-size: 26px;
     font-weight: 400; }
-    .e-crypta .all-cost a:hover {
+    .e-crypta .all-cost-wide a:hover {
       color: #dddddd !important;
       border-color: #dddddd !important; }
   @media screen and (max-width: 415px) {
-    .e-crypta .all-cost {
+    .e-crypta .all-cost-wide {
       width: 50%; } }
+  @media screen and (max-width: 415px) {
+    .e-crypta .all-cost-wide {
+      display: none; } }
+@media screen and (max-width: 415px) {
+  .e-crypta .btc-all-cost {
+    display: none; } }
+@media screen and (max-width: 415px) {
+  .e-crypta .all-mobile-traide-ico {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px; } }
+@media screen and (min-width: 416px) {
+  .e-crypta .all-mobile-traide-ico {
+    display: none; } }
+@media screen and (max-width: 415px) {
+  .e-crypta .all-cost-narrow {
+    display: flex;
+    flex-direction: row; } }
+.e-crypta .all-cost-narrow a {
+  text-decoration: none;
+  color: #dddddd !important;
+  border-color: #dddddd !important; }
+.e-crypta .all-cost-narrow .grn-coin, .e-crypta .all-cost-narrow .euro-coin, .e-crypta .all-cost-narrow .usd-coin {
+  border: 2px solid #393939;
+  height: 40px;
+  border-radius: 40px;
+  width: 40px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  color: #393939; }
+  .e-crypta .all-cost-narrow .grn-coin:hover, .e-crypta .all-cost-narrow .euro-coin:hover, .e-crypta .all-cost-narrow .usd-coin:hover {
+    text-decoration: none !important;
+    color: #dddddd !important;
+    border-color: #dddddd !important; }
+  @media screen and (max-width: 415px) {
+    .e-crypta .all-cost-narrow .grn-coin, .e-crypta .all-cost-narrow .euro-coin, .e-crypta .all-cost-narrow .usd-coin {
+      margin: 0 10px; } }
+@media screen and (max-width: 415px) {
+  .e-crypta .all-to-btc {
+    margin: 0 10px; } }
+.e-crypta .all-to-btc a:hover {
+  text-decoration: none;
+  color: #dddddd !important;
+  border-color: #dddddd !important; }
+.e-crypta .to-btc-href {
+  border: 2px solid #393939;
+  height: 40px;
+  border-radius: 40px;
+  width: 40px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  color: #393939; }
+.e-crypta .transfer-horiz {
+  margin-top: 5px; }
+.e-crypta .transfer-btn-transform {
+  background: url(../img/transfer-black.png) no-repeat;
+  width: 50px;
+  height: 50px; }
+  @media screen and (max-width: 415px) {
+    .e-crypta .transfer-btn-transform {
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg); } }
+  .e-crypta .transfer-btn-transform:hover {
+    background: url(../img/transfer-last.png) no-repeat; }
+@media screen and (max-width: 415px) {
+  .e-crypta .btc-cost {
+    display: none; } }
 .e-crypta .btc-cost:hover {
   border: none !important;
   outline: none !important; }
@@ -376,6 +454,9 @@
   left: 0; }
 .e-crypta .captcha-privacy img {
   max-width: 300px; }
+  @media screen and (max-width: 415px) {
+    .e-crypta .captcha-privacy img {
+      width: 100% !important; } }
   @media screen and (max-width: 300px) {
     .e-crypta .captcha-privacy img {
       width: 100%; } }
@@ -404,6 +485,9 @@
   font-size: 15px;
   font-weight: 400;
   margin: 20px 0 10px; }
+  @media screen and (max-width: 415px) {
+    .e-crypta .cost-label {
+      display: none; } }
 .e-crypta .gr-txt-cost-info {
   color: #3bcd78;
   font-family: "Open Sans";
@@ -554,6 +638,9 @@
   @media screen and (max-width: 415px) {
     .e-crypta .all-select-btp {
       flex-direction: column; } }
+  @media screen and (max-width: 415px) {
+    .e-crypta .all-select-btp {
+      display: none; } }
   @media screen and (max-width: 415px) {
     .e-crypta .all-select-btp a {
       display: flex;
@@ -1082,9 +1169,43 @@
     .e-crypta .all-nav-btn {
       width: 100%;
       display: block; } }
+.e-crypta .green-privacy-txt {
+  color: #3bcd78;
+  font-family: "Open Sans";
+  font-size: 21px;
+  font-weight: 700;
+  margin-top: 0; }
+.e-crypta .left-side-privacy {
+  padding: 4% 5% 4% 5%; }
+  @media screen and (max-width: 1152px) {
+    .e-crypta .left-side-privacy {
+      padding: 4% 5% 0% 5%; } }
+.e-crypta .right-txt-privacy {
+  text-align: left;
+  padding: 7% 5% 7% 5%; }
+  @media screen and (max-width: 1152px) {
+    .e-crypta .right-txt-privacy {
+      padding: 0% 5% 3% 5%; } }
+.e-crypta .all-paragraph-txt b {
+  padding: 10px 0; }
+.e-crypta .right-side-privacy {
+  margin-top: 0;
+  padding-top: 0; }
 
 .e-crypta .navbar-default {
   margin-bottom: 0;
   padding: 10px 0; }
+
+.e-crypta .all-cost-number a.active {
+  color: #d1d8d8;
+  border: 2px solid #d1d8d8; }
+
+.container-content .left-side .green-privacy-txt {
+  color: #3bcd78;
+  font-family: "Open Sans";
+  font-size: 21px;
+  font-weight: 700;
+  text-align: left;
+  padding-bottom: 20px; }
 
 /*# sourceMappingURL=style.css.map */
