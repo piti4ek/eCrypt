@@ -2,7 +2,7 @@
 
 .e-crypta {
   header {
-    background: #ccc;
+    background: #fff;
 
     .navbar-default {
       border: none;
@@ -20,6 +20,10 @@
     @media screen and (max-width: 1100px) {
       width: 100%;
     }
+  }
+
+  .two-right-side-app {
+    padding-top: 45px!important;
   }
 
   .brand-name-last {
@@ -189,6 +193,10 @@
   .collapse-container-top {
     padding-right: 0!important;
     margin-right: 0!important;
+
+    .fa-key, .fa-user-plus {
+      color: #f7d51a!important;
+    }
   }
 
   .head-container .collapse-container-top {
@@ -327,6 +335,15 @@
     }
   }
 
+  .btn-status-application {
+    width: 405px;
+
+    @media screen and (max-width: 405px) {
+      width: 100%;
+      max-width: 405px;
+    }
+  }
+
   .left-side {
     width: 50%;
     position: relative;
@@ -373,6 +390,10 @@
     margin: 0 auto;
     @media screen and (max-width: 415px) {
       width: 100%!important;
+    }
+
+    .bt-inputs-left {
+      max-width: 405px;
     }
   }
 
@@ -453,6 +474,7 @@
       justify-content: center;
       font-size: 24px;
       color: #393939;
+      cursor: pointer;
 
       &:hover {
         text-decoration: none!important;
@@ -516,7 +538,7 @@
   }
 
   .btc-cost {
-
+    cursor: pointer;
     @media screen and (max-width: 415px) {
       display: none;
     }
@@ -801,6 +823,11 @@
   .bt-inputs-left {
     margin-bottom: 5%;
     width: 415px;
+
+    @media screen and (max-width: 1152px) {
+      width: 100%;
+      max-width: 405px;
+    }
   }
 
   .next-btn-txt {
@@ -847,6 +874,11 @@
       background-color: #3bcd78;
       color: #fff;
     }
+
+    @media screen and (max-width: 1152px) {
+      width: 95%;
+    }
+
     @media screen and (max-width: 415px) {
       width: 90%;
     }
@@ -885,6 +917,14 @@
   .txt-info-terms-use {
     margin: 0 auto;
     text-align: left;
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 20px;
+
+    p {
+      padding-bottom: 5px;
+      font-size: 14px;
+    }
   }
 
   .all-cost-number span.active,
@@ -898,9 +938,9 @@
   .two-txt-exchanger {
     display: flex;
     flex-direction: row;
-    padding: 1% 5%;
+    padding: 1% 0%;
     line-height: 24px;
-    max-width: 560px;
+    max-width: 440px;
     margin: 0 auto;
     @media screen and (max-width: 450px) {
       padding: 3% 2%;
@@ -913,7 +953,7 @@
     }
 
     span {
-      padding-right: 5%;
+      padding-right: 5px;
     }
   }
 
@@ -954,6 +994,7 @@
       }
 
       .transfer-btn-all {
+        cursor: pointer;
         @media screen and (max-width: 415px) {
           margin-left: 0;
           margin-top: 10px;
@@ -1001,17 +1042,21 @@
     }
   }
 
+  footer {
+    background: #fff;
+  }
+
   .terms-use-txt {
     color: #3bcd78;
     font-family: "Open Sans";
     font-size: 21px;
     font-weight: 700;
     padding-bottom: 5%;
-    padding-left: 5%;
-    text-align: left;
+    text-align: center;
+    padding-left: 40px;
+
     @media screen and (max-width: 1152px) {
-      padding-left: 0;
-      text-align: center;
+      padding-bottom: 0%;
     }
   }
 
@@ -1334,6 +1379,10 @@
     margin-left: 13px;
     font-family: "Open Sans";
 
+    @media screen and (max-width: 390px) {
+      margin-left: 0;
+    }
+
     .first-txt-status {
       color: #393939;
       font-weight: 400;
@@ -1348,6 +1397,10 @@
       line-height: 30px;
       font-size: 24px;
       font-weight: 600;
+
+      @media screen and (max-width: 390px) {
+        font-size: 18px;
+      }
     }
 
     .last-txt-status {
@@ -1355,6 +1408,10 @@
       font-size: 18px;
       font-weight: 600;
       line-height: 30px;
+
+      @media screen and (max-width: 390px) {
+        font-size: 14px;
+      }
     }
   }
 
@@ -1505,6 +1562,20 @@
       font-size: 30px;
       margin: 0 20px;
     }
+
+    .cont-number {
+      a {
+        @media screen and (max-width: 320px) {
+          font-size: 22px;
+        }
+
+        svg {
+          @media screen and (max-width: 22px) {
+            font-size: 22px;
+          }
+        }
+      }
+    }
   }
 
   .txt-feedback {
@@ -1597,6 +1668,19 @@
     font-family: "Open Sans";
     font-size: 28px;
     font-weight: 400;
+
+
+    @media screen and (max-width: 425px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+
+    a {
+      @media screen and (max-width: 425px) {
+        margin: 10px 0;
+      }
+    }
   }
 
   .my-link-bt-left {
@@ -1648,9 +1732,12 @@
             border-right: 1px solid #f7d51a!important;
             border-color: #f7d51a!important;
           }
+
           @media screen and (max-width: 480px) {
             font-size: 14px;
           }
+
+          line-height: 60px;
         }
         @media screen and (max-width: 480px) {
           font-size: 14px;
@@ -1757,6 +1844,10 @@
 
     @media screen and (max-width: 1152px) {
       padding: 4% 5% 0% 5%;
+    }
+
+    @media screen and (max-width: 415px) {
+      width: 100%;
     }
   }
 

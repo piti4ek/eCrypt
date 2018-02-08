@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese");
 .e-crypta header {
-  background: #ccc; }
+  background: #fff; }
   .e-crypta header .navbar-default {
     border: none; }
   .e-crypta header h1 {
@@ -12,6 +12,8 @@
   @media screen and (max-width: 1100px) {
     .e-crypta .head-container {
       width: 100%; } }
+.e-crypta .two-right-side-app {
+  padding-top: 45px !important; }
 .e-crypta .brand-name-last {
   color: #393939 !important;
   font-family: "Open Sans";
@@ -123,6 +125,8 @@
 .e-crypta .collapse-container-top {
   padding-right: 0 !important;
   margin-right: 0 !important; }
+  .e-crypta .collapse-container-top .fa-key, .e-crypta .collapse-container-top .fa-user-plus {
+    color: #f7d51a !important; }
 .e-crypta .head-container .collapse-container-top {
   display: flex !important;
   justify-content: space-between;
@@ -207,6 +211,12 @@
     font-weight: 800;
     font-size: 27px;
     text-align: center; }
+.e-crypta .btn-status-application {
+  width: 405px; }
+  @media screen and (max-width: 405px) {
+    .e-crypta .btn-status-application {
+      width: 100%;
+      max-width: 405px; } }
 .e-crypta .left-side {
   width: 50%;
   position: relative;
@@ -241,6 +251,8 @@
   @media screen and (max-width: 415px) {
     .e-crypta .container-side-left {
       width: 100% !important; } }
+  .e-crypta .container-side-left .bt-inputs-left {
+    max-width: 405px; }
 .e-crypta .all-cost-wide {
   padding-left: 13px;
   display: flex;
@@ -299,7 +311,8 @@
   display: flex;
   justify-content: center;
   font-size: 24px;
-  color: #393939; }
+  color: #393939;
+  cursor: pointer; }
   .e-crypta .all-cost-narrow .grn-coin:hover, .e-crypta .all-cost-narrow .euro-coin:hover, .e-crypta .all-cost-narrow .usd-coin:hover {
     text-decoration: none !important;
     color: #dddddd !important;
@@ -340,15 +353,17 @@
       transform: rotate(90deg); } }
   .e-crypta .transfer-btn-transform:hover {
     background: url(../img/transfer-last.png) no-repeat; }
-@media screen and (max-width: 415px) {
-  .e-crypta .btc-cost {
-    display: none; } }
-.e-crypta .btc-cost:hover {
-  border: none !important;
-  outline: none !important; }
-.e-crypta .btc-cost:focus {
-  border: none !important;
-  outline: none !important; }
+.e-crypta .btc-cost {
+  cursor: pointer; }
+  @media screen and (max-width: 415px) {
+    .e-crypta .btc-cost {
+      display: none; } }
+  .e-crypta .btc-cost:hover {
+    border: none !important;
+    outline: none !important; }
+  .e-crypta .btc-cost:focus {
+    border: none !important;
+    outline: none !important; }
 .e-crypta .side-band {
   background-color: #f6f6f6;
   height: auto;
@@ -529,6 +544,10 @@
 .e-crypta .bt-inputs-left {
   margin-bottom: 5%;
   width: 415px; }
+  @media screen and (max-width: 1152px) {
+    .e-crypta .bt-inputs-left {
+      width: 100%;
+      max-width: 405px; } }
 .e-crypta .next-btn-txt {
   color: #d3d3d3;
   font-family: "Open Sans";
@@ -563,6 +582,9 @@
     box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.17);
     background-color: #3bcd78;
     color: #fff; }
+  @media screen and (max-width: 1152px) {
+    .e-crypta .btn-next-left-side {
+      width: 95%; } }
   @media screen and (max-width: 415px) {
     .e-crypta .btn-next-left-side {
       width: 90%; } }
@@ -588,7 +610,13 @@
     text-transform: uppercase; }
 .e-crypta .txt-info-terms-use {
   margin: 0 auto;
-  text-align: left; }
+  text-align: left;
+  font-size: 12px;
+  line-height: 20px;
+  margin-left: 20px; }
+  .e-crypta .txt-info-terms-use p {
+    padding-bottom: 5px;
+    font-size: 14px; }
 .e-crypta .all-cost-number span.active,
 .e-crypta .all-cost-number span:hover {
   border: 2px solid #d1d8d8; }
@@ -598,9 +626,9 @@
 .e-crypta .two-txt-exchanger {
   display: flex;
   flex-direction: row;
-  padding: 1% 5%;
+  padding: 1% 0%;
   line-height: 24px;
-  max-width: 560px;
+  max-width: 440px;
   margin: 0 auto; }
   @media screen and (max-width: 450px) {
     .e-crypta .four-txt-exchanger,
@@ -619,7 +647,7 @@
   .e-crypta .one-txt-exchanger span,
   .e-crypta .three-txt-exchanger span,
   .e-crypta .two-txt-exchanger span {
-    padding-right: 5%; }
+    padding-right: 5px; }
 .e-crypta .right-info-currency {
   text-align: left; }
   .e-crypta .right-info-currency p {
@@ -645,10 +673,12 @@
     .e-crypta .all-select-btp a {
       display: flex;
       justify-content: center; } }
-  @media screen and (max-width: 415px) {
-    .e-crypta .all-select-btp a .transfer-btn-all {
-      margin-left: 0;
-      margin-top: 10px; } }
+  .e-crypta .all-select-btp a .transfer-btn-all {
+    cursor: pointer; }
+    @media screen and (max-width: 415px) {
+      .e-crypta .all-select-btp a .transfer-btn-all {
+        margin-left: 0;
+        margin-top: 10px; } }
 .e-crypta .transfer-btn-all {
   background: url("../img/transfer-black.png") no-repeat;
   width: 50px;
@@ -675,18 +705,19 @@
 @media screen and (max-width: 767px) {
   .e-crypta .all-footer-social {
     margin-bottom: 20px; } }
+.e-crypta footer {
+  background: #fff; }
 .e-crypta .terms-use-txt {
   color: #3bcd78;
   font-family: "Open Sans";
   font-size: 21px;
   font-weight: 700;
   padding-bottom: 5%;
-  padding-left: 5%;
-  text-align: left; }
+  text-align: center;
+  padding-left: 40px; }
   @media screen and (max-width: 1152px) {
     .e-crypta .terms-use-txt {
-      padding-left: 0;
-      text-align: center; } }
+      padding-bottom: 0%; } }
 .e-crypta .gr-txt-info-btc {
   color: #3bcd78;
   font-size: 12px;
@@ -906,6 +937,9 @@
   border-left: 5px solid #e2de49;
   margin-left: 13px;
   font-family: "Open Sans"; }
+  @media screen and (max-width: 390px) {
+    .e-crypta .status-block {
+      margin-left: 0; } }
   .e-crypta .status-block .first-txt-status {
     color: #393939;
     font-weight: 400;
@@ -918,11 +952,17 @@
     line-height: 30px;
     font-size: 24px;
     font-weight: 600; }
+    @media screen and (max-width: 390px) {
+      .e-crypta .status-block .second-txt-status {
+        font-size: 18px; } }
   .e-crypta .status-block .last-txt-status {
     color: #393939;
     font-size: 18px;
     font-weight: 600;
     line-height: 30px; }
+    @media screen and (max-width: 390px) {
+      .e-crypta .status-block .last-txt-status {
+        font-size: 14px; } }
 .e-crypta .application-number-txt {
   font-size: 16px;
   text-align: center;
@@ -1018,6 +1058,12 @@
 .e-crypta .basic-contacts .fa-viber {
   font-size: 30px;
   margin: 0 20px; }
+@media screen and (max-width: 320px) {
+  .e-crypta .basic-contacts .cont-number a {
+    font-size: 22px; } }
+@media screen and (max-width: 22px) {
+  .e-crypta .basic-contacts .cont-number a svg {
+    font-size: 22px; } }
 .e-crypta .txt-feedback {
   height: 150px;
   padding-left: 15px;
@@ -1078,6 +1124,13 @@
   font-family: "Open Sans";
   font-size: 28px;
   font-weight: 400; }
+  @media screen and (max-width: 425px) {
+    .e-crypta .cont-number {
+      display: flex;
+      flex-direction: column; } }
+  @media screen and (max-width: 425px) {
+    .e-crypta .cont-number a {
+      margin: 10px 0; } }
 .e-crypta .my-link-bt-left {
   color: #393939;
   font-family: "Open Sans";
@@ -1099,13 +1152,15 @@
   text-decoration: none; }
 .e-crypta .contacts-right-side-app .panel {
   padding-left: 15px; }
-.e-crypta .my-price-table thead tr th:first-child {
-  line-height: 60px;
-  border-right: 1px solid #f7d51a !important;
-  border-color: #f7d51a !important; }
-@media screen and (max-width: 480px) {
-  .e-crypta .my-price-table thead tr th {
-    font-size: 14px; } }
+.e-crypta .my-price-table thead tr th {
+  line-height: 60px; }
+  .e-crypta .my-price-table thead tr th:first-child {
+    line-height: 60px;
+    border-right: 1px solid #f7d51a !important;
+    border-color: #f7d51a !important; }
+  @media screen and (max-width: 480px) {
+    .e-crypta .my-price-table thead tr th {
+      font-size: 14px; } }
 @media screen and (max-width: 480px) {
   .e-crypta .my-price-table thead tr {
     font-size: 14px; } }
@@ -1180,6 +1235,9 @@
   @media screen and (max-width: 1152px) {
     .e-crypta .left-side-privacy {
       padding: 4% 5% 0% 5%; } }
+  @media screen and (max-width: 415px) {
+    .e-crypta .left-side-privacy {
+      width: 100%; } }
 .e-crypta .right-txt-privacy {
   text-align: left;
   padding: 7% 5% 7% 5%; }
