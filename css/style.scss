@@ -397,6 +397,25 @@
     }
   }
 
+  .txt-application-mail {
+    :first-child {
+      font-size: 12px;
+      line-height: 14px;
+      color: #393939;
+      font-family: "Open Sans";
+      font-weight: 400;
+    }
+
+    :last-child {
+      color: #393939;
+      font-family: "Open Sans";
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 21.6px;
+      
+    }
+  }
+
   .all-cost-wide {
     padding-left: 13px;
     display: flex;
@@ -1895,4 +1914,108 @@
       padding-bottom: 20px;
     }
   }
+}
+
+
+
+
+
+
+
+
+
+
+// ===============================================================================================================
+
+
+.all-mail-status-success {
+  // display: flex;
+  // flex-direction: row;
+  // padding: 50px;
+  //
+  // img {
+  //   padding-right: 12px;
+  // }
+}
+
+.success-block {
+  background: #d8f5e5;
+}
+
+.mail-status-txt {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Open Sans";
+
+  :first-child {
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: #393939;
+    font-weight: 400;
+  }
+
+  :last-child {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 16px;
+  }
+}
+
+.all-success-block {
+  border-left: 5px solid #3bcd78;
+}
+
+.status-block {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-left: 13px;
+  font-family: "Open Sans";
+
+  @media screen and (max-width: 390px) {
+    margin-left: 0;
+  }
+
+  .first-txt-status {
+    color: #393939;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: "Open Sans";
+    font-size: 16px;
+  }
+
+  .second-txt-status {
+    font-family: "Open Sans";
+    color: #393939;
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: 600;
+
+    @media screen and (max-width: 390px) {
+      font-size: 18px;
+    }
+  }
+
+  .last-txt-status {
+    color: #393939;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+
+    @media screen and (max-width: 390px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.all-success-block {
+  padding: 0;
+  margin: 0;
+
+}
+
+.img-status-block {
+  margin-right: 25px;
 }

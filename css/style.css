@@ -253,6 +253,18 @@
       width: 100% !important; } }
   .e-crypta .container-side-left .bt-inputs-left {
     max-width: 405px; }
+.e-crypta .txt-application-mail :first-child {
+  font-size: 12px;
+  line-height: 14px;
+  color: #393939;
+  font-family: "Open Sans";
+  font-weight: 400; }
+.e-crypta .txt-application-mail :last-child {
+  color: #393939;
+  font-family: "Open Sans";
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 21.6px; }
 .e-crypta .all-cost-wide {
   padding-left: 13px;
   display: flex;
@@ -1202,7 +1214,7 @@
 .e-crypta .txt-bt-answer {
   margin-top: 20px; }
 .e-crypta .txt-faq-bt {
-  padding: 0 !important !important;
+  padding: 0 !important;
   margin: 20px 0 25px; }
 .e-crypta .all-discount-txt-bt {
   max-width: 440px;
@@ -1265,5 +1277,67 @@
   font-weight: 700;
   text-align: left;
   padding-bottom: 20px; }
+
+.success-block {
+  background: #d8f5e5; }
+
+.mail-status-txt {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Open Sans"; }
+  .mail-status-txt :first-child {
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: #393939;
+    font-weight: 400; }
+  .mail-status-txt :last-child {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 16px; }
+
+.all-success-block {
+  border-left: 5px solid #3bcd78; }
+
+.status-block {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-left: 13px;
+  font-family: "Open Sans"; }
+  @media screen and (max-width: 390px) {
+    .status-block {
+      margin-left: 0; } }
+  .status-block .first-txt-status {
+    color: #393939;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: "Open Sans";
+    font-size: 16px; }
+  .status-block .second-txt-status {
+    font-family: "Open Sans";
+    color: #393939;
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: 600; }
+    @media screen and (max-width: 390px) {
+      .status-block .second-txt-status {
+        font-size: 18px; } }
+  .status-block .last-txt-status {
+    color: #393939;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px; }
+    @media screen and (max-width: 390px) {
+      .status-block .last-txt-status {
+        font-size: 14px; } }
+
+.all-success-block {
+  padding: 0;
+  margin: 0; }
+
+.img-status-block {
+  margin-right: 25px; }
 
 /*# sourceMappingURL=style.css.map */
