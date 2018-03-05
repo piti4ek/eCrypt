@@ -2019,12 +2019,6 @@
   margin-right: 25px;
 }
 
-.img-bg-news {
-  width: 264px;
-  height: 180px;
-  background: #cbcbcb;
-}
-
 .all-content-news-block {
   width: 100%;
   font-family: 'Open Sans';
@@ -2034,19 +2028,52 @@
     text-align: left!important;
     color: #3bcd78!important;
     font-size: 21px!important;
-    padding-bottom: 10px;
-    font-weight: 700;
+    padding-bottom: 30px;
+    font-weight: 700!important;
   }
+
+  .img-bg-news img {
+    max-width: 264px;
+    height: auto;
+
+    @media screen and (max-width: 264px) {
+      width: 100%;
+    }
+}
+
+.img-bg-news {
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px!important;
+  }
+
+  @media screen and (max-width: 360px) {
+    text-align: center;
+  }
+}
 
   .my-news-media {
     display: flex;
     flex-direction: row;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
   }
 
   .my-news-media-heading {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @media screen and (max-width: 360px) {
+      flex-direction: column;
+      align-items: end;
+    }
+
+    @media screen and (max-width: 300px) {
+      padding-bottom: 15px;
+    }
   }
 
   .my-news-media-body {
@@ -2054,6 +2081,11 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 0 3% 5%;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      padding: 5% 0px;
+    }
 
     h4 {
       color: #393939;
@@ -2081,6 +2113,10 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+
+  @media screen and (max-width: 360px) {
+    padding-bottom: 15px;
+  }
 
   a {
     color: #d3d3d3!important;
@@ -2117,6 +2153,10 @@
   }
 }
 
+e-crypta .container-content h2.media-heading {
+  text-align: left;
+}
+
 .my-news-pagination {
   a {
     border: none!important;
@@ -2132,6 +2172,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 380px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .next-prev-news-block {
@@ -2147,12 +2191,7 @@
 
 .btn-head-news-support {
   width: 90%!important;
-  max-width: 215px;
-
-
-  span {
-
-  }
+  max-width: 215px!important;
 }
 
 .collapse-container-news {
@@ -2166,17 +2205,29 @@
   @media screen and (max-width: 905px) {
     padding-left: 2%;
   }
+
+  @media screen and (max-width: 860px) {
+    margin-top: 25px;
+    padding-left: 0;
+  }
+
+  .btn-head-news-support {
+    @media screen and (max-width: 860px) {
+      max-width: 175px;
+    }
+  }
 }
 
 .image-news-bg {
-  margin: 0 auto;
+  width: 100%;
   text-align: center;
 
   img {
-    max-width: 950px;
+    max-width: 910px;
 
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 972px) {
       width: 100%;
+
     }
   }
 }
@@ -2189,6 +2240,12 @@
   button {
     min-width: 200px;
   }
+
+  @media screen and (max-width: 767px) {
+    display: flex!important;
+    justify-content: center!important;
+    margin-bottom: 3%!important;
+  }
 }
 
 .news-txt-under-img {
@@ -2197,7 +2254,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
-    padding: 30px 50px;
+    padding: 30px 0 50px;
   }
 }
 
@@ -2206,11 +2263,25 @@
   font-size: 21px;
   font-style: italic;
   line-height: 30px;
+  padding: 0px 100px 50px;
+  padding-bottom: 50px;
+
+  @media screen and (max-width: 600px) {
+    padding: 0px 10% 10%;
+  }
 }
 
 .all-buttons-news {
+  padding: 30px 0;
   display: flex;
   flex-direction: row;
+
+  @media screen and (max-width: 845px) {
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   button {
     margin-right: 15px;
@@ -2221,9 +2292,46 @@
     min-width: 175px;
     justify-content: center;
     color: #fff;
+    border-radius: 0;
+
+    @media screen and (max-width: 845px) {
+      background-color: #3bcd78;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      min-width: 175px;
+      justify-content: center;
+      color: #fff;
+      max-width: 175px;
+      margin: 10px 0;
+    }
+
+    @media screen and (max-width: 380px) {
+      width: 100%;
+      max-width: 100%;
+    }
 
     b {
       padding: 5px 15px;
+    }
+
+    &:hover {
+      color: #3bcd78;
+      background: #fff;
+      border-radius: 0;
+    }
+  }
+}
+
+.my-top-news-bar {
+  @media screen and (max-width: 300px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  button {
+    @media screen and (max-width: 300px) {
+      width: 43px;
     }
   }
 }
