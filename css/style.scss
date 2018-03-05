@@ -2013,7 +2013,6 @@
 .all-success-block {
   padding: 0;
   margin: 0;
-
 }
 
 .img-status-block {
@@ -2148,8 +2147,83 @@
 
 .btn-head-news-support {
   width: 90%!important;
+  max-width: 215px;
+
 
   span {
-    
+
+  }
+}
+
+.collapse-container-news {
+  width: 100%;
+  padding-left: 10%;
+
+  @media screen and (max-width: 1000px) {
+    padding-left: 5%;
+  }
+
+  @media screen and (max-width: 905px) {
+    padding-left: 2%;
+  }
+}
+
+.image-news-bg {
+  margin: 0 auto;
+  text-align: center;
+
+  img {
+    max-width: 950px;
+
+    @media screen and (max-width: 950px) {
+      width: 100%;
+    }
+  }
+}
+
+.btn-support-news {
+  text-align: right!important;
+  display: flex!important;
+  justify-content: flex-end!important;
+
+  button {
+    min-width: 200px;
+  }
+}
+
+.news-txt-under-img {
+  p {
+    color: #393939;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    padding: 30px 50px;
+  }
+}
+
+.quote-news {
+  color: #393939;
+  font-size: 21px;
+  font-style: italic;
+  line-height: 30px;
+}
+
+.all-buttons-news {
+  display: flex;
+  flex-direction: row;
+
+  button {
+    margin-right: 15px;
+    background-color: #3bcd78;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 175px;
+    justify-content: center;
+    color: #fff;
+
+    b {
+      padding: 5px 15px;
+    }
   }
 }
